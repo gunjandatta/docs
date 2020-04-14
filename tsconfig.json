@@ -8,15 +8,15 @@
     },
     "typedocOptions": {
         "include": [
-            "../sprest-def/lib/SP/**/*"
+            "./node_modules/gd-sprest-def/lib/SP/**/*"
         ],
         "exclude": [
-            "../sprest/@types/index.d.ts",
-            "../sprest/@types/intellisense/index.d.ts",
-            "../sprest/@types/intellisense/graph.d.ts",
-            "../sprest/@types/lib/graph.d.ts",
-            "../sprest/@types/sptypes/index.d.ts",
-            "../sprest/@types/utils/**/*"
+            "./node_modules/gd-sprest/@types/index.d.ts",
+            "./node_modules/gd-sprest/@types/intellisense/index.d.ts",
+            "./node_modules/gd-sprest/@types/intellisense/graph.d.ts",
+            "./node_modules/gd-sprest/@types/lib/graph.d.ts",
+            "./node_modules/gd-sprest/@types/sptypes/index.d.ts",
+            "./node_modules/gd-sprest/@types/utils/**/*"
         ],
         "excludeExternals": true,
         "includeDeclarations": true,

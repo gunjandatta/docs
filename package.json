@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "typedoc ../sprest/@types --out docs/sprest",
+    "build": "typedoc ./node_modules/gd-sprest/@types --out docs/sprest",
     "clean": "node clean.js",
     "docs": "npm run clean && npm run build"
   },
