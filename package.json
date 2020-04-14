@@ -1,0 +1,27 @@
+{
+  "name": "docs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "typedoc ./node_modules/gd-sprest/@types --out sprest",
+    "clean": "node clean.js",
+    "docs": "npm run clean && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gunjandatta/docs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gunjandatta/docs/issues"
+  },
+  "homepage": "https://github.com/gunjandatta/docs#readme",
+  "dependencies": {
+    "gd-sprest": "^5.4.5",
+    "gd-sprest-def": "^0.7.7",
+    "typedoc": "^0.17.4"
+  }
+}

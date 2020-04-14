@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "lib": [
+            "dom",
+            "es2015"
+        ]
+    },
+    "typedocOptions": {
+        "exclude": [
+            "./node_modules/gd-sprest/@types/index.d.ts",
+            "./node_modules/gd-sprest/@types/intellisense/index.d.ts",
+            "./node_modules/gd-sprest/@types/intellisense/graph.d.ts",
+            "./node_modules/gd-sprest/@types/lib/graph.d.ts",
+            "./node_modules/gd-sprest/@types/sptypes/index.d.ts",
+            "./node_modules/gd-sprest/@types/utils/**/*"
+        ],
+        "excludeExternals": true,
+        "includeDeclarations": true,
+        "mode": "modules",
+        "theme": "default"
+    }
+}
