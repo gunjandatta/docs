@@ -69,7 +69,7 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Interfaces</h3>
+							<h3>Context Information Interfaces</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/_lib_contextinfo_d_.icontextinformation.html" class="tsd-kind-icon">IContext<wbr>Information</a></li>
 							</ul>
@@ -91,13 +91,33 @@
 					<div class="tsd-signature tsd-kind-icon">Context<wbr>Info<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_lib_contextinfo_d_.icontextinformation.html" class="tsd-signature-type">IContextInformation</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in gd-sprest/@types/lib/contextInfo.d.ts:6</li>
+							<li>Defined in <a href="https://github.com/gunjandatta/docs/blob/05b8ee27/@types/lib/contextInfo.d.ts#L26">@types/lib/contextInfo.d.ts:26</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Context Information</p>
+							<p>A reference to the _spPageContextInfo global variable.</p>
 						</div>
+						<a href="#how-to-get-the-context-information-of-another-web" id="how-to-get-the-context-information-of-another-web" style="color: inherit; text-decoration: none;">
+							<h3>How to get the context information of another web</h3>
+						</a>
+						<p>This is required for making POST requests on webs in different site collections.</p>
+						<pre><code class="language-ts"><span class="hljs-comment">// Get the context information of the root web</span>
+ContextInfo.getWeb(<span class="hljs-string">"/"</span>).execute(<span class="hljs-function">(<span class="hljs-params">contextInfo</span>) =&gt;</span> {
+    <span class="hljs-comment">// Get the root web</span>
+    Web(<span class="hljs-string">"/"</span>, { requestDigest: contextInfo.GetContextWebInformation.FormDigestValue })
+        <span class="hljs-comment">// Get the 'Site Assets' library</span>
+        .Lists(<span class="hljs-string">"Site Assets"</span>)
+        <span class="hljs-comment">// Query for the items</span>
+        .getItemsByQuery(<span class="hljs-string">"&lt;Query&gt;&lt;OrderBy&gt;&lt;FieldRef Name='ID' /&gt;&lt;/OrderBy&gt;&lt;/Query&gt;"</span>)
+        <span class="hljs-comment">// Execute the request</span>
+        .execute(<span class="hljs-function"><span class="hljs-params">items</span> =&gt;</span> {
+            <span class="hljs-comment">// Parse the items</span>
+            <span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> i=<span class="hljs-number">0</span>; i&lt;items.results.length; i++) {
+                <span class="hljs-keyword">let</span> item = items.results[i];
+            }
+        });
+});</code></pre>
 					</div>
 				</section>
 			</section>
@@ -132,7 +152,6 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
-				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
 				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
 			</ul>
 			<ul class="tsd-legend">

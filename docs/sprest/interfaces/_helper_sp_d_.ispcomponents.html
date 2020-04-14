@@ -107,12 +107,23 @@
 					<div class="tsd-signature tsd-kind-icon">Callout<wbr>Manager<span class="tsd-signature-symbol">:</span> <a href="_helper_sp_d_.icalloutmanager.html" class="tsd-signature-type">ICalloutManager</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in gd-sprest/@types/helper/sp.d.ts:13</li>
+							<li>Defined in <a href="https://github.com/gunjandatta/docs/blob/05b8ee27/@types/helper/sp.d.ts#L24">@types/helper/sp.d.ts:24</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Callout Manager</p>
+							<a href="#how-to-create-a-callout" id="how-to-create-a-callout" style="color: inherit; text-decoration: none;">
+								<h3>How to create a callout</h3>
+							</a>
+							<pre><code class="language-ts">Helper.SP.CalloutManager.init().then(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+  <span class="hljs-comment">// Create the callout</span>
+  <span class="hljs-keyword">let</span> callout = Helper.SP.CalloutManager.createNewIfNecessary({
+    ID: <span class="hljs-string">"UniqueId"</span>,
+    launchPoint: <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">"input[value='Run']"</span>),
+    title: <span class="hljs-string">"My Custom Callout"</span>,
+    content: <span class="hljs-string">"&lt;p&gt;This is the content of the callout. An element can be applied instead of a string."</span>
+  });
+});</code></pre>
 						</div>
 					</div>
 				</section>
@@ -122,12 +133,18 @@
 					<div class="tsd-signature tsd-kind-icon">Modal<wbr>Dialog<span class="tsd-signature-symbol">:</span> <a href="_helper_sp_d_.imodaldialog.html" class="tsd-signature-type">IModalDialog</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in gd-sprest/@types/helper/sp.d.ts:18</li>
+							<li>Defined in <a href="https://github.com/gunjandatta/docs/blob/05b8ee27/@types/helper/sp.d.ts#L35">@types/helper/sp.d.ts:35</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Modal Dialog</p>
+							<a href="#how-to-create-a-modal-dialog" id="how-to-create-a-modal-dialog" style="color: inherit; text-decoration: none;">
+								<h3>How to create a modal dialog</h3>
+							</a>
+							<pre><code class="language-ts">Helper.SP.ModalDialog.showWaitScreenWithNoClose(<span class="hljs-string">"Loading the Data"</span>).then(<span class="hljs-function"><span class="hljs-params">dlg</span> =&gt;</span> {
+  <span class="hljs-comment">// Do Stuff and then close the dialog</span>
+  dlg.close();
+});</code></pre>
 						</div>
 					</div>
 				</section>
@@ -137,12 +154,15 @@
 					<div class="tsd-signature tsd-kind-icon">Notify<span class="tsd-signature-symbol">:</span> <a href="_helper_sp_d_.inotify.html" class="tsd-signature-type">INotify</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in gd-sprest/@types/helper/sp.d.ts:23</li>
+							<li>Defined in <a href="https://github.com/gunjandatta/docs/blob/05b8ee27/@types/helper/sp.d.ts#L43">@types/helper/sp.d.ts:43</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Notification</p>
+							<a href="#how-to-create-a-notification" id="how-to-create-a-notification" style="color: inherit; text-decoration: none;">
+								<h3>How to create a notification</h3>
+							</a>
+							<pre><code class="language-ts">Helper.SP.Notify.addNotifition(<span class="hljs-string">"This is a notification."</span>, <span class="hljs-literal">false</span>);</code></pre>
 						</div>
 					</div>
 				</section>
@@ -152,12 +172,17 @@
 					<div class="tsd-signature tsd-kind-icon">SOD<span class="tsd-signature-symbol">:</span> <a href="_helper_sp_d_.isod.html" class="tsd-signature-type">ISOD</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in gd-sprest/@types/helper/sp.d.ts:28</li>
+							<li>Defined in <a href="https://github.com/gunjandatta/docs/blob/05b8ee27/@types/helper/sp.d.ts#L53">@types/helper/sp.d.ts:53</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Script on Demand (SOD)</p>
+							<a href="#how-to-wait-for-a-library-to-be-loaded" id="how-to-wait-for-a-library-to-be-loaded" style="color: inherit; text-decoration: none;">
+								<h3>How to wait for a library to be loaded</h3>
+							</a>
+							<pre><code class="language-ts">Helper.SP.SOD.executeOrDelayUntilScriptLoaded(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+  <span class="hljs-comment">// Do Stuff</span>
+}, <span class="hljs-string">"gd-sprest"</span>);</code></pre>
 						</div>
 					</div>
 				</section>
@@ -167,12 +192,15 @@
 					<div class="tsd-signature tsd-kind-icon">Status<span class="tsd-signature-symbol">:</span> <a href="_helper_sp_d_.istatus.html" class="tsd-signature-type">IStatus</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in gd-sprest/@types/helper/sp.d.ts:33</li>
+							<li>Defined in <a href="https://github.com/gunjandatta/docs/blob/05b8ee27/@types/helper/sp.d.ts#L61">@types/helper/sp.d.ts:61</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Status</p>
+							<a href="#how-to-create-a-status" id="how-to-create-a-status" style="color: inherit; text-decoration: none;">
+								<h3>How to create a status</h3>
+							</a>
+							<pre><code class="language-ts">Helper.SP.Status.addStatus(<span class="hljs-string">"Success"</span>, <span class="hljs-string">"This is a custom status."</span>);</code></pre>
 						</div>
 					</div>
 				</section>
@@ -270,14 +298,13 @@
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
-				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
-				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
-				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
-			</ul>
-			<ul class="tsd-legend">
 				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
 				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
 			</ul>
 		</div>
 	</div>

@@ -94,13 +94,53 @@
 					<div class="tsd-signature tsd-kind-icon">JSLink<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_helper_jslink_d_.ijslink.html" class="tsd-signature-type">IJSLink</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in gd-sprest/@types/helper/jslink.d.ts:4</li>
+							<li>Defined in <a href="https://github.com/gunjandatta/docs/blob/05b8ee27/@types/helper/jslink.d.ts#L39">@types/helper/jslink.d.ts:39</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>JSLink</p>
+							<p>Helper class for creating JSLink solutions.</p>
 						</div>
+						<a href="#how-to-register-a-template" id="how-to-register-a-template" style="color: inherit; text-decoration: none;">
+							<h3>How to register a template</h3>
+						</a>
+						<pre><code class="language-ts">Helper.JSLink.register({
+    Templates: {
+        Fields: {
+            Title: {
+                EditForm: <span class="hljs-function">(<span class="hljs-params">ctx, field</span>) =&gt;</span> { $REST.Helper.JSLink.hideField(ctx, field, <span class="hljs-literal">true</span>); },
+                View: $REST.Helper.JSLink.disableQuickEdit
+            }
+        }
+    }
+});</code></pre>
+						<a href="#available-customizations" id="available-customizations" style="color: inherit; text-decoration: none;">
+							<h3>Available Customizations</h3>
+						</a>
+						<ul>
+							<li>BaseViewID</li>
+							<li>ListTemplateType</li>
+							<li>OnPostRender</li>
+							<li>onPreRender</li>
+							<li>Templates<ul>
+									<li>Body</li>
+									<li>Footer</li>
+									<li>Fields<ul>
+											<li>DisplayForm</li>
+											<li>EditForm</li>
+											<li>Name</li>
+											<li>NewForm</li>
+											<li>View</li>
+										</ul>
+									</li>
+									<li>Group</li>
+									<li>Header</li>
+									<li>Item</li>
+									<li>OnPostRender</li>
+									<li>OnPreRender<pre><code></code></pre></li>
+								</ul>
+							</li>
+						</ul>
 					</div>
 				</section>
 			</section>
@@ -144,7 +184,6 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
-				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
 				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
 			</ul>
 			<ul class="tsd-legend">

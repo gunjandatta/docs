@@ -110,13 +110,41 @@
 					<div class="tsd-signature tsd-kind-icon">SPConfig<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>cfg<span class="tsd-signature-symbol">: </span><a href="../interfaces/_helper_spcfg_d_.ispconfigprops.html" class="tsd-signature-type">ISPConfigProps</a>, webUrl<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="../interfaces/_helper_spcfg_d_.ispconfig.html" class="tsd-signature-type">ISPConfig</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in gd-sprest/@types/helper/spCfg.d.ts:6</li>
+							<li>Defined in <a href="https://github.com/gunjandatta/docs/blob/05b8ee27/@types/helper/spCfg.d.ts#L35">@types/helper/spCfg.d.ts:35</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>SharePoint Configuration</p>
+							<p>Helper class for creating SharePoint Assets</p>
 						</div>
+						<a href="#example-configuration" id="example-configuration" style="color: inherit; text-decoration: none;">
+							<h3>Example Configuration</h3>
+						</a>
+						<pre><code class="language-ts"><span class="hljs-keyword">let</span> cfg = Helper.SPConfig({
+    ListCfg: [
+        {
+            ListInformation: {
+                BaseTemplate: SPTypes.ListTemplateType.GenericList,
+                Description: <span class="hljs-string">""</span>,
+                Title: <span class="hljs-string">"My Custom List"</span>,
+            },
+            ViewInformation: [
+                {
+                    JSLink: <span class="hljs-string">"~sitecollection/style library/jslinks/mySolution.js"</span>,
+                    ViewFields: [<span class="hljs-string">"ID"</span>, <span class="hljs-string">"Title"</span>, <span class="hljs-string">"InternalFieldName"</span>],
+                    ViewName: <span class="hljs-string">"All Items"</span>,
+                    ViewQuery: <span class="hljs-string">"&lt;Query&gt;&lt;/Query&gt;"</span>
+                }
+            ]
+        }
+    ]
+});
+
+<span class="hljs-comment">// Install the library</span>
+cfg.install();
+
+<span class="hljs-comment">// Unisntall the library</span>
+cfg.uninstall();</code></pre>
 					</div>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
@@ -232,7 +260,6 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
-				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
 				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
 			</ul>
 			<ul class="tsd-legend">

@@ -91,13 +91,37 @@
 					<div class="tsd-signature tsd-kind-icon">Web<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_lib_web_d_.iweb.html" class="tsd-signature-type">IWeb</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in gd-sprest/@types/lib/web.d.ts:7</li>
+							<li>Defined in <a href="https://github.com/gunjandatta/docs/blob/05b8ee27/@types/lib/web.d.ts#L34">@types/lib/web.d.ts:34</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Web</p>
+							<a href="#rest-api" id="rest-api" style="color: inherit; text-decoration: none;">
+								<h4>REST API</h4>
+							</a>
+							<p>_api/web</p>
 						</div>
+						<a href="#get-current-web" id="get-current-web" style="color: inherit; text-decoration: none;">
+							<h4>Get current web</h4>
+						</a>
+						<pre><code class="language-typescript"><span class="hljs-keyword">import</span> { Web } <span class="hljs-keyword">from</span> <span class="hljs-string">"gd-sprest"</span>;
+
+Web().execute(<span class="hljs-function"><span class="hljs-params">web</span> =&gt;</span> {
+  <span class="hljs-keyword">let</span> title = web.Title;
+});</code></pre>
+						<a href="#query-a-list-to-include-various-collections" id="query-a-list-to-include-various-collections" style="color: inherit; text-decoration: none;">
+							<h4>Query a list to include various collections</h4>
+						</a>
+						<pre><code class="language-typescript"><span class="hljs-keyword">import</span> { Web } <span class="hljs-keyword">from</span> <span class="hljs-string">"gd-sprest"</span>;
+
+Web().query({
+ Expand: [<span class="hljs-string">"ContentTypes"</span>, <span class="hljs-string">"Fields"</span>, <span class="hljs-string">"Lists"</span>, <span class="hljs-string">"RootFolder"</span>]
+}).execute(<span class="hljs-function"><span class="hljs-params">web</span> =&gt;</span> {
+  <span class="hljs-keyword">let</span> contentTypes = web.ContentTypes.results;
+  <span class="hljs-keyword">let</span> fields = web.Fields.results;
+  <span class="hljs-keyword">let</span> lists = web.Lists.results;
+  <span class="hljs-keyword">let</span> rootFolder = web.RootFolder;
+});</code></pre>
 					</div>
 				</section>
 			</section>
@@ -132,7 +156,6 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
-				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
 				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
 			</ul>
 			<ul class="tsd-legend">
