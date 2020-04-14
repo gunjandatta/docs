@@ -7,6 +7,9 @@
         ]
     },
     "typedocOptions": {
+        "include": [
+            "./node_modules/gd-sprest-def/lib/SP/**/*"
+        ],
         "exclude": [
             "./node_modules/gd-sprest/@types/index.d.ts",
             "./node_modules/gd-sprest/@types/intellisense/index.d.ts",
@@ -18,6 +21,6 @@
         "excludeExternals": true,
         "includeDeclarations": true,
         "mode": "modules",
-        "theme": "default"
+        "theme": "./theme"
     }
 }
