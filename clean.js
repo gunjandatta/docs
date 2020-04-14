@@ -24,7 +24,7 @@ function deleteFolderRecursive(path) {
 console.log("Deleting the docs");
 
 // Delete the folder
-deleteFolderRecursive("./docs");
+deleteFolderRecursive("./docs/sprest");
 
 // Log
 console.log("Successfully deleted the docs");
