@@ -1,17 +1,20 @@
 var fs = require('fs');
 
-function deleteFolderRecursive(path) {
+// Deletes a directory
+function deleteDirectory(path) {
+    // Ensure the directory exists
     if (fs.existsSync(path) && fs.lstatSync(path).isDirectory()) {
-        fs.readdirSync(path).forEach(function (file, index) {
-            var curPath = path + "/" + file;
+        // Get each item in the directory
+        fs.readdirSync(path).forEach(function (item) {
+            var objPath = path + "/" + item;
 
             // See if this is a directory
-            if (fs.lstatSync(curPath).isDirectory()) {
+            if (fs.lstatSync(objPath).isDirectory()) {
                 // Delete the folder recursively
-                deleteFolderRecursive(curPath);
+                deleteDirectory(objPath);
             } else {
                 // Delete the file
-                fs.unlinkSync(curPath);
+                fs.unlinkSync(objPath);
             }
         });
 
@@ -24,7 +27,7 @@ function deleteFolderRecursive(path) {
 console.log("Deleting the docs");
 
 // Delete the folder
-deleteFolderRecursive("./docs/sprest");
+deleteDirectory("./docs/sprest");
 
 // Log
 console.log("Successfully deleted the docs");
