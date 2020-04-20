@@ -22,7 +22,9 @@
   "dependencies": {
     "gd-sprest": "^5.4.9",
     "gd-sprest-def": "^0.7.7",
-    "typedoc": "^0.17.4",
+    "typedoc": "^0.17.4"
+  },
+  "devDependencies": {
     "typescript": "^3.8.3"
   }
 }
