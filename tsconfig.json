@@ -7,20 +7,21 @@
         ]
     },
     "typedocOptions": {
-        "include": [
-            "./node_modules/gd-sprest-def/lib/SP/**/*"
+        "inputFiles": [
+            "@types",
+            "lib/SP/entitytypes.d.ts"
         ],
         "exclude": [
-            "./node_modules/gd-sprest/@types/index.d.ts",
-            "./node_modules/gd-sprest/@types/intellisense/index.d.ts",
-            "./node_modules/gd-sprest/@types/intellisense/graph.d.ts",
-            "./node_modules/gd-sprest/@types/lib/graph.d.ts",
-            "./node_modules/gd-sprest/@types/sptypes/index.d.ts",
-            "./node_modules/gd-sprest/@types/utils/**/*"
+            "@types/intellisense/index.d.ts",
+            "@types/intellisense/graph.d.ts",
+            "@types/lib/graph.d.ts",
+            "@types/sptypes/index.d.ts",
+            "@types/utils/**/*"
         ],
         "excludeExternals": true,
         "includeDeclarations": true,
         "mode": "modules",
+        "out": "docs/sprest",
         "theme": "./theme"
     }
 }

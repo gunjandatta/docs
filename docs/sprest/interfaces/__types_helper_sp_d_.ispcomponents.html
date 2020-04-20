@@ -1,0 +1,319 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ISPComponents | docs</title>
+	<meta name="description" content="Documentation for docs">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="/" class="title">docs</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/__types_helper_sp_d_.html">&quot;@types/helper/sp.d&quot;</a>
+				</li>
+				<li>
+					<a href="__types_helper_sp_d_.ispcomponents.html">ISPComponents</a>
+				</li>
+			</ul>
+			<h1>Interface ISPComponents</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>SharePoint Components</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">ISPComponents</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="__types_helper_sp_d_.ispcomponents.html#calloutmanager" class="tsd-kind-icon">Callout<wbr>Manager</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="__types_helper_sp_d_.ispcomponents.html#modaldialog" class="tsd-kind-icon">Modal<wbr>Dialog</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="__types_helper_sp_d_.ispcomponents.html#notify" class="tsd-kind-icon">Notify</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="__types_helper_sp_d_.ispcomponents.html#sod" class="tsd-kind-icon">SOD</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="__types_helper_sp_d_.ispcomponents.html#status" class="tsd-kind-icon">Status</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="calloutmanager" class="tsd-anchor"></a>
+					<h3>Callout<wbr>Manager</h3>
+					<div class="tsd-signature tsd-kind-icon">Callout<wbr>Manager<span class="tsd-signature-symbol">:</span> <a href="__types_helper_sp_d_.icalloutmanager.html" class="tsd-signature-type">ICalloutManager</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in @types/helper/sp.d.ts:24</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<a href="#how-to-create-a-callout" id="how-to-create-a-callout" style="color: inherit; text-decoration: none;">
+								<h3>How to create a callout</h3>
+							</a>
+							<pre><code class="language-ts">Helper.SP.CalloutManager.init().then(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+  <span class="hljs-comment">// Create the callout</span>
+  <span class="hljs-keyword">let</span> callout = Helper.SP.CalloutManager.createNewIfNecessary({
+    ID: <span class="hljs-string">"UniqueId"</span>,
+    launchPoint: <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">"input[value='Run']"</span>),
+    title: <span class="hljs-string">"My Custom Callout"</span>,
+    content: <span class="hljs-string">"&lt;p&gt;This is the content of the callout. An element can be applied instead of a string."</span>
+  });
+});</code></pre>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="modaldialog" class="tsd-anchor"></a>
+					<h3>Modal<wbr>Dialog</h3>
+					<div class="tsd-signature tsd-kind-icon">Modal<wbr>Dialog<span class="tsd-signature-symbol">:</span> <a href="__types_helper_sp_d_.imodaldialog.html" class="tsd-signature-type">IModalDialog</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in @types/helper/sp.d.ts:35</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<a href="#how-to-create-a-modal-dialog" id="how-to-create-a-modal-dialog" style="color: inherit; text-decoration: none;">
+								<h3>How to create a modal dialog</h3>
+							</a>
+							<pre><code class="language-ts">Helper.SP.ModalDialog.showWaitScreenWithNoClose(<span class="hljs-string">"Loading the Data"</span>).then(<span class="hljs-function"><span class="hljs-params">dlg</span> =&gt;</span> {
+  <span class="hljs-comment">// Do Stuff and then close the dialog</span>
+  dlg.close();
+});</code></pre>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="notify" class="tsd-anchor"></a>
+					<h3>Notify</h3>
+					<div class="tsd-signature tsd-kind-icon">Notify<span class="tsd-signature-symbol">:</span> <a href="__types_helper_sp_d_.inotify.html" class="tsd-signature-type">INotify</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in @types/helper/sp.d.ts:43</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<a href="#how-to-create-a-notification" id="how-to-create-a-notification" style="color: inherit; text-decoration: none;">
+								<h3>How to create a notification</h3>
+							</a>
+							<pre><code class="language-ts">Helper.SP.Notify.addNotifition(<span class="hljs-string">"This is a notification."</span>, <span class="hljs-literal">false</span>);</code></pre>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="sod" class="tsd-anchor"></a>
+					<h3>SOD</h3>
+					<div class="tsd-signature tsd-kind-icon">SOD<span class="tsd-signature-symbol">:</span> <a href="__types_helper_sp_d_.isod.html" class="tsd-signature-type">ISOD</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in @types/helper/sp.d.ts:53</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<a href="#how-to-wait-for-a-library-to-be-loaded" id="how-to-wait-for-a-library-to-be-loaded" style="color: inherit; text-decoration: none;">
+								<h3>How to wait for a library to be loaded</h3>
+							</a>
+							<pre><code class="language-ts">Helper.SP.SOD.executeOrDelayUntilScriptLoaded(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+  <span class="hljs-comment">// Do Stuff</span>
+}, <span class="hljs-string">"gd-sprest"</span>);</code></pre>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="status" class="tsd-anchor"></a>
+					<h3>Status</h3>
+					<div class="tsd-signature tsd-kind-icon">Status<span class="tsd-signature-symbol">:</span> <a href="__types_helper_sp_d_.istatus.html" class="tsd-signature-type">IStatus</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in @types/helper/sp.d.ts:61</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<a href="#how-to-create-a-status" id="how-to-create-a-status" style="color: inherit; text-decoration: none;">
+								<h3>How to create a status</h3>
+							</a>
+							<pre><code class="language-ts">Helper.SP.Status.addStatus(<span class="hljs-string">"Success"</span>, <span class="hljs-string">"This is a custom status."</span>);</code></pre>
+						</div>
+					</div>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-module">
+						<a href="../modules/__types_helper_sp_d_.html">&quot;@types/helper/sp.d&quot;</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="__types_helper_sp_d_.icallout.html" class="tsd-kind-icon">ICallout</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="__types_helper_sp_d_.icalloutaction.html" class="tsd-kind-icon">ICallout<wbr>Action</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="__types_helper_sp_d_.icalloutactionmenu.html" class="tsd-kind-icon">ICallout<wbr>Action<wbr>Menu</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="__types_helper_sp_d_.icalloutactionmenuentry.html" class="tsd-kind-icon">ICallout<wbr>Action<wbr>Menu<wbr>Entry</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="__types_helper_sp_d_.icalloutactionoptions.html" class="tsd-kind-icon">ICallout<wbr>Action<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="__types_helper_sp_d_.icalloutmanager.html" class="tsd-kind-icon">ICallout<wbr>Manager</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="__types_helper_sp_d_.icalloutopenoptions.html" class="tsd-kind-icon">ICallout<wbr>Open<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="__types_helper_sp_d_.icalloutoptions.html" class="tsd-kind-icon">ICallout<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="__types_helper_sp_d_.idialogoptions.html" class="tsd-kind-icon">IDialog<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="__types_helper_sp_d_.imodaldialog.html" class="tsd-kind-icon">IModal<wbr>Dialog</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="__types_helper_sp_d_.imodaldialogobj.html" class="tsd-kind-icon">IModal<wbr>Dialog<wbr>Obj</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="__types_helper_sp_d_.inotify.html" class="tsd-kind-icon">INotify</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="__types_helper_sp_d_.isod.html" class="tsd-kind-icon">ISOD</a>
+					</li>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface tsd-parent-kind-module">
+						<a href="__types_helper_sp_d_.ispcomponents.html" class="tsd-kind-icon">ISPComponents</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="__types_helper_sp_d_.ispcomponents.html#calloutmanager" class="tsd-kind-icon">Callout<wbr>Manager</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="__types_helper_sp_d_.ispcomponents.html#modaldialog" class="tsd-kind-icon">Modal<wbr>Dialog</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="__types_helper_sp_d_.ispcomponents.html#notify" class="tsd-kind-icon">Notify</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="__types_helper_sp_d_.ispcomponents.html#sod" class="tsd-kind-icon">SOD</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="__types_helper_sp_d_.ispcomponents.html#status" class="tsd-kind-icon">Status</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="__types_helper_sp_d_.istatus.html" class="tsd-kind-icon">IStatus</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="../modules/__types_helper_sp_d_.html#sp" class="tsd-kind-icon">SP</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>

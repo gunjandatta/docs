@@ -2,10 +2,10 @@
   "name": "docs",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "@types/index.d.ts",
   "scripts": {
-    "build": "typedoc ./node_modules/gd-sprest/@types --out docs/sprest",
-    "clean": "node clean.js",
+    "build": "typedoc",
+    "clean": "node clean.js && node update.js",
     "docs": "npm run clean && npm run build"
   },
   "repository": {
@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/gunjandatta/docs#readme",
   "dependencies": {
-    "gd-sprest": "^5.4.6",
+    "gd-sprest": "^5.4.9",
     "gd-sprest-def": "^0.7.7",
     "typedoc": "^0.17.4"
   }

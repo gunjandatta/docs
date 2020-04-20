@@ -1,25 +1,52 @@
 var fs = require('fs');
 
-// Deletes a directory
-function deleteDirectory(path) {
+// Copy a directory
+function copyDirectory(src, target) {
+    // Delete the target
+    deleteDirectory(target);
+
     // Ensure the directory exists
-    if (fs.existsSync(path) && fs.lstatSync(path).isDirectory()) {
+    if (fs.existsSync(src) && fs.lstatSync(src).isDirectory()) {
+        // Create the directory
+        fs.mkdirSync(target);
+
         // Get each item in the directory
-        fs.readdirSync(path).forEach(function (item) {
-            var objPath = path + "/" + item;
+        fs.readdirSync(src).forEach(function (item) {
+            var srcPath = src + "/" + item;
+            var targetPath = target + "/" + item;
 
             // See if this is a directory
-            if (fs.lstatSync(objPath).isDirectory()) {
+            if (fs.lstatSync(srcPath).isDirectory()) {
+                // Copy the folder recursively
+                copyDirectory(srcPath, targetPath);
+            } else {
+                // Copy the file
+                fs.copyFileSync(srcPath, targetPath);
+            }
+        });
+    }
+}
+
+// Deletes a directory
+function deleteDirectory(src) {
+    // Ensure the directory exists
+    if (fs.existsSync(src) && fs.lstatSync(src).isDirectory()) {
+        // Get each item in the directory
+        fs.readdirSync(src).forEach(function (item) {
+            var srcPath = src + "/" + item;
+
+            // See if this is a directory
+            if (fs.lstatSync(srcPath).isDirectory()) {
                 // Delete the folder recursively
-                deleteDirectory(objPath);
+                deleteDirectory(srcPath);
             } else {
                 // Delete the file
-                fs.unlinkSync(objPath);
+                fs.unlinkSync(srcPath);
             }
         });
 
         // Delete the directory
-        fs.rmdirSync(path);
+        fs.rmdirSync(src);
     }
 };
 
@@ -30,4 +57,11 @@ console.log("Deleting the docs");
 deleteDirectory("./docs/sprest");
 
 // Log
-console.log("Successfully deleted the docs");
+console.log("Copying the definitions");
+
+// Copy
+copyDirectory("./node_modules/gd-sprest/@types", "./@types");
+copyDirectory("./node_modules/gd-sprest-def/lib", "./lib");
+
+// Log
+console.log("Successfully cleaned the library");

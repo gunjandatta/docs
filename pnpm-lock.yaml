@@ -1,5 +1,5 @@
 dependencies:
-  gd-sprest: 5.4.5
+  gd-sprest: 5.4.9
   gd-sprest-def: 0.7.7
   typedoc: 0.17.4
 lockfileVersion: 5.1
@@ -47,13 +47,13 @@ packages:
     dev: false
     resolution:
       integrity: sha512-Sa6pgLCEcZzJavs37BqffN8whVXll+Kq7pB/KIhyFuR0lFAdC/yxw2Nk8LLvqBqwfEmmlPmXtlCjbkwdclG9nw==
-  /gd-sprest/5.4.5:
+  /gd-sprest/5.4.9:
     dependencies:
       core-js: 3.6.5
       gd-sprest-def: 0.7.7
     dev: false
     resolution:
-      integrity: sha512-ASarzah1QKXNTM5dWNvOCfoyR054Gp12nMqSTDZSqJ86KLvI1pG5IR/zECkeYLPeJ4u+EraApgqlxARcKbCjaA==
+      integrity: sha512-ZV8mUJqEJomlBt0q3ZFrkjMGykMgjsLeNWG3mY7kyDlkutur1EpIRQ96dMAqtq0T7cmfqfKSNo/KxdhSWfbUzg==
   /glob/7.1.6:
     dependencies:
       fs.realpath: 1.0.0
@@ -80,7 +80,7 @@ packages:
       node: '>=0.4.7'
     hasBin: true
     optionalDependencies:
-      uglify-js: 3.9.0
+      uglify-js: 3.9.1
     resolution:
       integrity: sha512-1f2BACcBfiwAfStCKZNrUCgqNZkGsAT7UM3kkYtXuLo0KnaVfjKOyf7PRzB6++aK9STyT1Pd2ZCPe3EGOXleXA==
   /highlight.js/9.18.1:
@@ -163,18 +163,18 @@ packages:
       integrity: sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
   /rechoir/0.6.2:
     dependencies:
-      resolve: 1.15.1
+      resolve: 1.16.1
     dev: false
     engines:
       node: '>= 0.10'
     resolution:
       integrity: sha1-hSBLVNuoLVdC4oyWdW70OvUOM4Q=
-  /resolve/1.15.1:
+  /resolve/1.16.1:
     dependencies:
       path-parse: 1.0.6
     dev: false
     resolution:
-      integrity: sha512-84oo6ZTtoTUpjgNEr5SJyzQhzL72gaRodsSfyxC/AXRvwu0Yse9H8eF9IpGo7b8YetZhlI6v7ZQ6bKBFV/6S7w==
+      integrity: sha512-rmAglCSqWWMrrBv/XM6sW0NuRFiKViw/W4d9EbC4pt+49H8JwHy+mcGmALTEg504AUDcLTvb1T2q3E9AnmY+ig==
   /shelljs/0.8.3:
     dependencies:
       glob: 7.1.6
@@ -220,7 +220,7 @@ packages:
       typescript: '>=3.8.3'
     resolution:
       integrity: sha512-4Lotef1l6lNU5Fulpux809WPlF9CkmcXfv5QFyanrjYlxMFxSdARRdsy8Jv1OU3z0vjR4JsvUQT0YpiPqztcOA==
-  /uglify-js/3.9.0:
+  /uglify-js/3.9.1:
     dependencies:
       commander: 2.20.3
     dev: false
@@ -229,7 +229,7 @@ packages:
     hasBin: true
     optional: true
     resolution:
-      integrity: sha512-j5wNQBWaql8gr06dOUrfaohHlscboQZ9B8sNsoK5o4sBjm7Ht9dxSbrMXyktQpA16Acaij8AcoozteaPYZON0g==
+      integrity: sha512-JUPoL1jHsc9fOjVFHdQIhqEEJsQvfKDjlubcCilu8U26uZ73qOg8VsN8O1jbuei44ZPlwL7kmbAdM4tzaUvqnA==
   /universalify/0.1.2:
     dev: false
     engines:
@@ -245,6 +245,6 @@ packages:
     resolution:
       integrity: sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=
 specifiers:
-  gd-sprest: ^5.4.5
+  gd-sprest: ^5.4.9
   gd-sprest-def: ^0.7.7
   typedoc: ^0.17.4
