@@ -63,5 +63,8 @@ console.log("Copying the definitions");
 copyDirectory("./node_modules/gd-sprest/@types", "./@types");
 copyDirectory("./node_modules/gd-sprest-def/lib", "./lib");
 
+// Copy the documentation
+fs.copyFileSync("./node_modules/gd-sprest/README.md", "./@types/README.md");
+
 // Log
 console.log("Successfully cleaned the library");

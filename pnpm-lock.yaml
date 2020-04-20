@@ -1,7 +1,8 @@
 dependencies:
   gd-sprest: 5.4.9
   gd-sprest-def: 0.7.7
-  typedoc: 0.17.4
+  typedoc: 0.17.4_typescript@3.8.3
+  typescript: 3.8.3
 lockfileVersion: 5.1
 packages:
   /balanced-match/1.0.0:
@@ -200,7 +201,7 @@ packages:
       node: '>= 8'
     resolution:
       integrity: sha512-SuqAQI0CkwhqSJ2kaVTgl37cWs733uy9UGUqwtcds8pkFK8oRF4rZmCq+FXTGIb9hIUOu40rf5Kojg0Ha6akeg==
-  /typedoc/0.17.4:
+  /typedoc/0.17.4_typescript@3.8.3:
     dependencies:
       fs-extra: 8.1.0
       handlebars: 4.7.6
@@ -212,6 +213,7 @@ packages:
       progress: 2.0.3
       shelljs: 0.8.3
       typedoc-default-themes: 0.10.1
+      typescript: 3.8.3
     dev: false
     engines:
       node: '>= 8.0.0'
@@ -220,6 +222,13 @@ packages:
       typescript: '>=3.8.3'
     resolution:
       integrity: sha512-4Lotef1l6lNU5Fulpux809WPlF9CkmcXfv5QFyanrjYlxMFxSdARRdsy8Jv1OU3z0vjR4JsvUQT0YpiPqztcOA==
+  /typescript/3.8.3:
+    dev: false
+    engines:
+      node: '>=4.2.0'
+    hasBin: true
+    resolution:
+      integrity: sha512-MYlEfn5VrLNsgudQTVJeNaQFUAI7DkhnOjdpAp4T+ku1TfQClewlbSuTVHiA+8skNBgaf02TL/kLOvig4y3G8w==
   /uglify-js/3.9.1:
     dependencies:
       commander: 2.20.3
@@ -248,3 +257,4 @@ specifiers:
   gd-sprest: ^5.4.9
   gd-sprest-def: ^0.7.7
   typedoc: ^0.17.4
+  typescript: ^3.8.3
