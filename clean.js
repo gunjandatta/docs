@@ -7,9 +7,6 @@ function copyDirectory(src, target) {
 
     // Ensure the directory exists
     if (fs.existsSync(src) && fs.lstatSync(src).isDirectory()) {
-        // Create the directory
-        fs.mkdirSync(target);
-
         // Get each item in the directory
         fs.readdirSync(src).forEach(function (item) {
             var srcPath = src + "/" + item;
@@ -18,6 +15,9 @@ function copyDirectory(src, target) {
             // See if this is a directory
             if (fs.lstatSync(srcPath).isDirectory()) {
                 // Copy the folder recursively
+                // Create the directory
+                fs.mkdirSync(targetPath);
+
                 copyDirectory(srcPath, targetPath);
             } else {
                 // Copy the file
@@ -39,14 +39,14 @@ function deleteDirectory(src) {
             if (fs.lstatSync(srcPath).isDirectory()) {
                 // Delete the folder recursively
                 deleteDirectory(srcPath);
+
+                // Delete the directory
+                fs.rmdirSync(srcPath);
             } else {
                 // Delete the file
                 fs.unlinkSync(srcPath);
             }
         });
-
-        // Delete the directory
-        fs.rmdirSync(src);
     }
 };
 

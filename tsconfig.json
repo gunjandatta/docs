@@ -8,7 +8,10 @@
     },
     "typedocOptions": {
         "inputFiles": [
-            "@types",
+            "@types/helper",
+            "@types/lib",
+            "@types/sptypes/sptypes.d.ts",
+            "@types/rest.d.ts",
             "lib/SP/entitytypes.d.ts"
         ],
         "exclude": [
