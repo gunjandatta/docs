@@ -67,24 +67,24 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<style>
-    #bsModalDemo, #wcModalDemo {
-        margin-top: 100px;
-        margin-left: 0px;
-    }
-</style>
 						<div id="demo"></div>
 						<script type="text/javascript" src="https://unpkg.com/gd-sprest-bs/dist/gd-sprest-bs-icons.js"></script>
 						<script type="text/javascript">
     // Wait for the window to be loaded
     window.addEventListener("load", function() {
+        // Create the button
+        $REST.Components.Button({
+            el: document.querySelector("#demo"),
+            target: "#bsModalDemo",
+            text: "Show Modal",
+            toggle: "modal"
+        });
         // Create the modal
         var modal = $REST.Components.Modal({
             el: document.querySelector("#demo"),
             id: "bsModalDemo",
             title: "Modal Demo",
-            body: "This is the body of the modal.",
-            button: { text: "Open Modal" }
+            body: "This is the body of the modal."
         });
     });
 </script>
@@ -120,7 +120,7 @@
 					<div class="tsd-signature tsd-kind-icon">Modal<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><a href="../interfaces/_components_modal_d_.imodalprops.html" class="tsd-signature-type">IModalProps</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="../interfaces/_components_modal_d_.imodal.html" class="tsd-signature-type">IModal</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gunjandatta/docs/blob/d27db01/components/components/modal.d.ts#L46">components/modal.d.ts:46</a></li>
+							<li>Defined in components/modal.d.ts:49</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -131,18 +131,21 @@
 						</div>
 						<pre><code class="language-ts"><span class="hljs-keyword">import</span> { Components } <span class="hljs-keyword">from</span> <span class="hljs-string">"gd-sprest-bs"</span>;
 
+<span class="hljs-comment">// Create the button</span>
+Components.Button({
+    el: <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">"#modalDemo"</span>),
+    target: <span class="hljs-string">"#bsModalDemo"</span>,
+    text: <span class="hljs-string">"Show Modal"</span>,
+    toggle: <span class="hljs-string">"modal"</span>
+});
+
 <span class="hljs-comment">// Create the modal</span>
 <span class="hljs-keyword">let</span> el = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">"#modalDemo"</span>);
 <span class="hljs-keyword">let</span> modal = Components.Modal({
     el: el,
     id: <span class="hljs-string">"bsModalDemo"</span>,
     title: <span class="hljs-string">"Modal Demo"</span>,
-    body: <span class="hljs-string">"This is the body of the modal."</span>,
-    button: {
-        text: <span class="hljs-string">"Open Modal"</span>,
-        toggle: <span class="hljs-string">"modal"</span>,
-        target: <span class="hljs-string">"#bsModalDemo"</span>
-    }
+    body: <span class="hljs-string">"This is the body of the modal."</span>
 });</code></pre>
 					</div>
 					<div class="tsd-type-declaration">

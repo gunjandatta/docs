@@ -64,6 +64,27 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<div id="demo"></div>
+						<script type="text/javascript" src="https://unpkg.com/gd-sprest-bs/dist/gd-sprest-bs-icons.js"></script>
+						<script type="text/javascript">
+    // Wait for the window to be loaded
+    window.addEventListener("load", function() {
+        // Create the toast
+        $REST.Components.Toast({
+            el: document.querySelector("#demo"),
+            headerText: "Header",
+            body: "This is the body of the toast.",
+            mutedText: "2 seconds ago",
+            options: { autohide: false }
+        });
+    });
+</script>
+					</div>
+				</div>
+			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
@@ -93,7 +114,7 @@
 					<div class="tsd-signature tsd-kind-icon">Toast<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><a href="../interfaces/_components_toast_d_.itoastprops.html" class="tsd-signature-type">IToastProps</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="../interfaces/_components_toast_d_.itoast.html" class="tsd-signature-type">IToast</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gunjandatta/docs/blob/d27db01/components/components/toast.d.ts#L4">components/toast.d.ts:4</a></li>
+							<li>Defined in components/toast.d.ts:36</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -102,6 +123,17 @@
 								<h3>Toast</h3>
 							</a>
 						</div>
+						<pre><code class="language-ts"><span class="hljs-keyword">import</span> { Components } <span class="hljs-keyword">from</span> <span class="hljs-string">"gd-sprest-bs"</span>;
+
+<span class="hljs-comment">// Create a toast</span>
+<span class="hljs-keyword">let</span> el = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">"#toast"</span>);
+Components.Toast({
+    el,
+    headerText: <span class="hljs-string">"Header"</span>,
+    body: <span class="hljs-string">"This is the body of the toast."</span>,
+    mutedText: <span class="hljs-string">"2 seconds ago"</span>,
+    options: { autohide: <span class="hljs-literal">false</span> }
+});</code></pre>
 					</div>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>

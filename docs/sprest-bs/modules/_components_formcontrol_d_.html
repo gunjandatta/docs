@@ -73,12 +73,12 @@
     // Wait for the window to be loaded
     window.addEventListener("load", function() {
         // Render the form
-        $REST.Components.FormControl({
-            el: document.querySelector("#demo"),
+        var control = $REST.Components.FormControl({
             label: "First Name:",
             name: "FName",
             type: $REST.Components.FormControlTypes.TextField
         });
+        document.querySelector("#demo").appendChild(control.el);
     });
 </script>
 					</div>
@@ -127,7 +127,7 @@
 					<div class="tsd-signature tsd-kind-icon">IForm<wbr>Control<wbr>Types<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>Checkbox<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>Dropdown<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>Email<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>File<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>MultiDropdown<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>Password<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>Radio<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>Range<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>Readonly<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>Switch<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>TextArea<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>TextField<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gunjandatta/docs/blob/d27db01/components/components/formControl.d.ts#L141">components/formControl.d.ts:141</a></li>
+							<li>Defined in components/formControl.d.ts:141</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -186,7 +186,7 @@
 					<div class="tsd-signature tsd-kind-icon">Custom<wbr>Controls<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>registerType<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, onRender<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_components_formcontrol_d_.iformcontrolprops.html" class="tsd-signature-type">IFormControlProps</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">; </span>getByType<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gunjandatta/docs/blob/d27db01/components/components/formControl.d.ts#L30">components/formControl.d.ts:30</a></li>
+							<li>Defined in components/formControl.d.ts:30</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -253,7 +253,7 @@
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in <a href="https://github.com/gunjandatta/docs/blob/d27db01/components/components/formControl.d.ts#L32">components/formControl.d.ts:32</a></li>
+												<li>Defined in components/formControl.d.ts:32</li>
 											</ul>
 										</aside>
 										<h4 class="tsd-parameters-title">Parameters</h4>
@@ -293,7 +293,7 @@
 					<div class="tsd-signature tsd-kind-icon">Form<wbr>Control<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><a href="../interfaces/_components_formcontrol_d_.iformcontrolprops.html" class="tsd-signature-type">IFormControlProps</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="../interfaces/_components_formcontrol_d_.iformcontrol.html" class="tsd-signature-type">IFormControl</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gunjandatta/docs/blob/d27db01/components/components/formControl.d.ts#L21">components/formControl.d.ts:21</a></li>
+							<li>Defined in components/formControl.d.ts:21</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -331,7 +331,7 @@
 					<div class="tsd-signature tsd-kind-icon">Form<wbr>Control<wbr>Types<span class="tsd-signature-symbol">:</span> <a href="_components_formcontrol_d_.html#iformcontroltypes" class="tsd-signature-type">IFormControlTypes</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gunjandatta/docs/blob/d27db01/components/components/formControl.d.ts#L41">components/formControl.d.ts:41</a></li>
+							<li>Defined in components/formControl.d.ts:41</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">

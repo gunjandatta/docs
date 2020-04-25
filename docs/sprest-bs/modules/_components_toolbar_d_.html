@@ -64,6 +64,31 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<div id="demo"></div>
+						<script type="text/javascript" src="https://unpkg.com/gd-sprest-bs/dist/gd-sprest-bs-icons.js"></script>
+						<script type="text/javascript">
+    // Wait for the window to be loaded
+    window.addEventListener("load", function() {
+        // Create the toolbar
+        $REST.Components.Toolbar({
+        el: document.querySelector("#demo"),
+        spacing: 3,
+        items: [
+            { buttons: [{ text: "Button 1" }] },
+            { buttons: [{ text: "Button 2" }] },
+            { buttons: [{ text: "Button 3" }] },
+            { buttons: [{ text: "Button 4" }] },
+            { buttons: [{ text: "Button 5" }] }
+        ]
+        });
+    });
+</script>
+					</div>
+				</div>
+			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
@@ -93,7 +118,7 @@
 					<div class="tsd-signature tsd-kind-icon">Toolbar<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><a href="../interfaces/_components_toolbar_d_.itoolbarprops.html" class="tsd-signature-type">IToolbarProps</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="../interfaces/_components_toolbar_d_.itoolbar.html" class="tsd-signature-type">IToolbar</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gunjandatta/docs/blob/d27db01/components/components/toolbar.d.ts#L7">components/toolbar.d.ts:7</a></li>
+							<li>Defined in components/toolbar.d.ts:44</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -102,6 +127,21 @@
 								<h3>Toolbar</h3>
 							</a>
 						</div>
+						<pre><code class="language-ts"><span class="hljs-keyword">import</span> { Components } <span class="hljs-keyword">from</span> <span class="hljs-string">"gd-sprest-bs"</span>;
+
+<span class="hljs-comment">// Create a toolbar</span>
+<span class="hljs-keyword">let</span> el = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">"#toolbar"</span>);
+Components.Toolbar({
+    el,
+    spacing: <span class="hljs-number">3</span>,
+    items: [
+        { buttons: [{ text: <span class="hljs-string">"Button 1"</span> }] },
+        { buttons: [{ text: <span class="hljs-string">"Button 2"</span> }] },
+        { buttons: [{ text: <span class="hljs-string">"Button 3"</span> }] },
+        { buttons: [{ text: <span class="hljs-string">"Button 4"</span> }] },
+        { buttons: [{ text: <span class="hljs-string">"Button 5"</span> }] }
+    ]
+});</code></pre>
 					</div>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>

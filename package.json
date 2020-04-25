@@ -21,8 +21,8 @@
   },
   "homepage": "https://github.com/gunjandatta/docs#readme",
   "dependencies": {
-    "gd-bs": "^2.1.1",
-    "gd-sprest": "^5.4.9",
+    "gd-bs": "^2.1.2",
+    "gd-sprest": "^5.5.3",
     "gd-sprest-def": "^0.7.7",
     "typedoc": "^0.17.4"
   },
