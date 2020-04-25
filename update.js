@@ -41,12 +41,14 @@ updateReference("./components/components", function (data) {
     // Return the content
     return data.replace(/"gd-bs\/components/g, "\".")
         .replace(/"gd-bs/g, "\".")
-        .replace(/"gd-sprest/g, "\"../../@types");
+        .replace(/"gd-sprest/g, "\"../../@types")
+        .replace(/\* import { Components } from "..\/..\/@types-bs"/g, '* import { Components } from "gd-sprest-bs"');
 });
 updateReference("./components/webparts", function (data) {
     // Return the content
     return data.replace(/"gd-bs\/components/g, "\"../components")
-        .replace(/"gd-sprest/g, "\"../../@types");
+        .replace(/"gd-sprest/g, "\"../../@types")
+        .replace(/\* import { WebParts } from "..\/..\/@types-bs"/g, '* import { WebParts } from "gd-sprest-bs"');
 });
 
 // Log
