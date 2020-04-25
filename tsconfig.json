@@ -24,6 +24,7 @@
         "excludeExternals": true,
         "includeDeclarations": true,
         "mode": "modules",
+        "name": "gd-sprest",
         "out": "docs/sprest",
         "theme": "./theme"
     }
