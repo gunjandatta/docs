@@ -5,8 +5,9 @@
   "main": "@types/index.d.ts",
   "scripts": {
     "build": "typedoc",
+    "build-bs": "typedoc --tsconfig ./tsconfig-bs.json",
     "clean": "node clean.js && node update.js",
-    "docs": "npm run clean && npm run build"
+    "docs": "npm run clean && npm run build && npm run build-bs"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   },
   "homepage": "https://github.com/gunjandatta/docs#readme",
   "dependencies": {
+    "gd-bs": "^2.1.1",
     "gd-sprest": "^5.4.9",
     "gd-sprest-def": "^0.7.7",
     "typedoc": "^0.17.4"

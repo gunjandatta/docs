@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "lib": [
+            "dom",
+            "es2015"
+        ]
+    },
+    "typedocOptions": {
+        "inputFiles": [
+            "components"
+        ],
+        "exclude": [
+            "components/index.d.ts",
+            "components/base.d.ts"
+        ],
+        "excludeExternals": true,
+        "includeDeclarations": true,
+        "mode": "modules",
+        "out": "docs/sprest-bs",
+        "theme": "./theme"
+    }
+}

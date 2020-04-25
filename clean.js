@@ -2,8 +2,14 @@ var fs = require('fs');
 
 // Copy a directory
 function copyDirectory(src, target) {
-    // Delete the target
-    deleteDirectory(target);
+    // See if the target exists
+    if (fs.existsSync(target)) {
+        // Delete the target
+        deleteDirectory(target);
+    } else {
+        // Create the directory
+        fs.mkdirSync(target);
+    }
 
     // Ensure the directory exists
     if (fs.existsSync(src) && fs.lstatSync(src).isDirectory()) {
@@ -55,11 +61,13 @@ console.log("Deleting the docs");
 
 // Delete the folder
 deleteDirectory("./docs/sprest");
+deleteDirectory("./docs/sprest-bs");
 
 // Log
 console.log("Copying the definitions");
 
 // Copy
+copyDirectory("./node_modules/gd-bs/@types", "./components");
 copyDirectory("./node_modules/gd-sprest/@types", "./@types");
 copyDirectory("./node_modules/gd-sprest-def/lib", "./lib");
 
