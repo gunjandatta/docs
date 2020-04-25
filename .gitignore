@@ -1,4 +1,6 @@
 @types
 components
+gd-bs
+gd-sprest-bs
 lib
 node_modules

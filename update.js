@@ -1,7 +1,7 @@
 var fs = require('fs')
 
 // Copy a directory
-function updateReference(src) {
+function updateReference(src, onReplace) {
     // Ensure the directory exists
     if (fs.existsSync(src) && fs.lstatSync(src).isDirectory()) {
         // Get each item in the directory
@@ -11,13 +11,13 @@ function updateReference(src) {
             // See if this is a directory
             if (fs.lstatSync(srcPath).isDirectory()) {
                 // Copy the folder recursively
-                updateReference(srcPath);
+                updateReference(srcPath, onReplace);
             } else {
                 // Read the file
                 var data = fs.readFileSync(srcPath, "utf8");
 
                 // Replace the reference
-                var content = data.replace(/gd-sprest-def/g, item == "rest.d.ts" ? ".." : "../..")
+                var content = onReplace(data, item);
 
                 // Update the file
                 if (content != data) {
@@ -32,7 +32,22 @@ function updateReference(src) {
 console.log("Updating the references");
 
 // Update the references
-updateReference("./@types");
+updateReference("./@types", function (data, file) {
+    // Return the content
+    return data.replace(/"gd-sprest-def"/g, '"../../lib"')
+        .replace(/gd-sprest-def/g, file == "rest.d.ts" ? ".." : "../..");
+});
+updateReference("./components/components", function (data) {
+    // Return the content
+    return data.replace(/"gd-bs\/components/g, "\".")
+        .replace(/"gd-bs/g, "\".")
+        .replace(/"gd-sprest/g, "\"../../@types");
+});
+updateReference("./components/webparts", function (data) {
+    // Return the content
+    return data.replace(/"gd-bs\/components/g, "\"../components")
+        .replace(/"gd-sprest/g, "\"../../@types");
+});
 
 // Log
 console.log("Successfully updated the references");

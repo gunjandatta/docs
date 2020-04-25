@@ -1,14 +1,14 @@
 dependencies:
   gd-bs: 2.1.3
   gd-sprest: 5.5.3
+  gd-sprest-bs: 3.9.0
   gd-sprest-def: 0.7.7
-  typedoc: 0.17.4_typescript@3.8.3
 devDependencies:
-  typescript: 3.8.3
+  typedoc: 0.17.4
 lockfileVersion: 5.1
 packages:
   /balanced-match/1.0.0:
-    dev: false
+    dev: true
     resolution:
       integrity: sha1-ibTRmasr7kneFk6gK4nORi1xt2c=
   /bootstrap-icons/1.0.0-alpha3:
@@ -30,16 +30,16 @@ packages:
     dependencies:
       balanced-match: 1.0.0
       concat-map: 0.0.1
-    dev: false
+    dev: true
     resolution:
       integrity: sha512-iCuPHDFgrHX7H2vEI/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187ufozdaHgWKcYFb61qGiA==
   /commander/2.20.3:
-    dev: false
+    dev: true
     optional: true
     resolution:
       integrity: sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==
   /concat-map/0.0.1:
-    dev: false
+    dev: true
     resolution:
       integrity: sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=
   /core-js/3.6.5:
@@ -52,13 +52,13 @@ packages:
       graceful-fs: 4.2.3
       jsonfile: 4.0.0
       universalify: 0.1.2
-    dev: false
+    dev: true
     engines:
       node: '>=6 <7 || >=8'
     resolution:
       integrity: sha512-yhlQgA6mnOJUKOsRUFsgJdQCvkKhcz8tlZG5HBQfReYZy46OwLcY+Zia0mtdHsOo9y/hP+CxMN0TU9QxoOtG4g==
   /fs.realpath/1.0.0:
-    dev: false
+    dev: true
     resolution:
       integrity: sha1-FQStJSMVjKpA20onh8sBQRmU6k8=
   /gd-bs/2.1.3:
@@ -68,6 +68,14 @@ packages:
     dev: false
     resolution:
       integrity: sha512-l02T2YjGOcn743fXnIMf27tjQNTOvUPekf9uEkaOVevSt4Aq4l15jzVy1Jb4/+O+vcMJ1B678Z+u+in3yDca6A==
+  /gd-sprest-bs/3.9.0:
+    dependencies:
+      gd-bs: 2.1.3
+      gd-sprest: 5.5.3
+      gd-sprest-def: 0.7.7
+    dev: false
+    resolution:
+      integrity: sha512-j/arLm3SNQyNn80WFpAoB1Lsh0bZSw7suL+R72d6RrO384TjvEWGntU2hqkFLPwTdDL4VJnmLFUycBPM2209Yg==
   /gd-sprest-def/0.7.7:
     dev: false
     resolution:
@@ -87,11 +95,11 @@ packages:
       minimatch: 3.0.4
       once: 1.4.0
       path-is-absolute: 1.0.1
-    dev: false
+    dev: true
     resolution:
       integrity: sha512-LwaxwyZ72Lk7vZINtNNrywX0ZuLyStrdDtabefZKAY5ZGJhVtgdznluResxNmPitE0SAO+O26sWTHeKSI2wMBA==
   /graceful-fs/4.2.3:
-    dev: false
+    dev: true
     resolution:
       integrity: sha512-a30VEBm4PEdx1dRB7MFK7BejejvCvBronbLjht+sHuGYj8PHs7M/5Z+rt5lw551vZ7yfTCj4Vuyy3mSJytDWRQ==
   /handlebars/4.7.6:
@@ -100,7 +108,7 @@ packages:
       neo-async: 2.6.1
       source-map: 0.6.1
       wordwrap: 1.0.0
-    dev: false
+    dev: true
     engines:
       node: '>=0.4.7'
     hasBin: true
@@ -109,42 +117,42 @@ packages:
     resolution:
       integrity: sha512-1f2BACcBfiwAfStCKZNrUCgqNZkGsAT7UM3kkYtXuLo0KnaVfjKOyf7PRzB6++aK9STyT1Pd2ZCPe3EGOXleXA==
   /highlight.js/9.18.1:
-    dev: false
+    dev: true
     resolution:
       integrity: sha512-OrVKYz70LHsnCgmbXctv/bfuvntIKDz177h0Co37DQ5jamGZLVmoCVMtjMtNZY3X9DrCcKfklHPNeA0uPZhSJg==
   /inflight/1.0.6:
     dependencies:
       once: 1.4.0
       wrappy: 1.0.2
-    dev: false
+    dev: true
     resolution:
       integrity: sha1-Sb1jMdfQLQwJvJEKEHW6gWW1bfk=
   /inherits/2.0.4:
-    dev: false
+    dev: true
     resolution:
       integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==
   /interpret/1.2.0:
-    dev: false
+    dev: true
     engines:
       node: '>= 0.10'
     resolution:
       integrity: sha512-mT34yGKMNceBQUoVn7iCDKDntA7SC6gycMAWzGx1z/CMCTV7b2AAtXlo3nRyHZ1FelRkQbQjprHSYGwzLtkVbw==
   /jsonfile/4.0.0:
-    dev: false
+    dev: true
     optionalDependencies:
       graceful-fs: 4.2.3
     resolution:
       integrity: sha1-h3Gq4HmbZAdrdmQPygWPnBDjPss=
   /lodash/4.17.15:
-    dev: false
+    dev: true
     resolution:
       integrity: sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
   /lunr/2.3.8:
-    dev: false
+    dev: true
     resolution:
       integrity: sha512-oxMeX/Y35PNFuZoHp+jUj5OSEmLCaIH4KTFJh7a93cHBoFmpw2IoPs22VIz7vyO2YUnx2Tn9dzIwO2P/4quIRg==
   /marked/0.8.2:
-    dev: false
+    dev: true
     engines:
       node: '>= 8.16.2'
     hasBin: true
@@ -153,35 +161,35 @@ packages:
   /minimatch/3.0.4:
     dependencies:
       brace-expansion: 1.1.11
-    dev: false
+    dev: true
     resolution:
       integrity: sha512-yJHVQEhyqPLUTgt9B83PXu6W3rx4MvvHvSUvToogpwoGDOUQ+yDrR0HRot+yOCdCO7u4hX3pWft6kWBBcqh0UA==
   /minimist/1.2.5:
-    dev: false
+    dev: true
     resolution:
       integrity: sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==
   /neo-async/2.6.1:
-    dev: false
+    dev: true
     resolution:
       integrity: sha512-iyam8fBuCUpWeKPGpaNMetEocMt364qkCsfL9JuhjXX6dRnguRVOfk2GZaDpPjcOKiiXCPINZC1GczQ7iTq3Zw==
   /once/1.4.0:
     dependencies:
       wrappy: 1.0.2
-    dev: false
+    dev: true
     resolution:
       integrity: sha1-WDsap3WWHUsROsF9nFC6753Xa9E=
   /path-is-absolute/1.0.1:
-    dev: false
+    dev: true
     engines:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-F0uSaHNVNP+8es5r9TpanhtcX18=
   /path-parse/1.0.6:
-    dev: false
+    dev: true
     resolution:
       integrity: sha512-GSmOT2EbHrINBf9SR7CDELwlJ8AENk3Qn7OikK4nFYAu3Ote2+JYNVvkpAEQm3/TLNEJFD/xZJjzyxg3KBWOzw==
   /progress/2.0.3:
-    dev: false
+    dev: true
     engines:
       node: '>=0.4.0'
     resolution:
@@ -189,7 +197,7 @@ packages:
   /rechoir/0.6.2:
     dependencies:
       resolve: 1.17.0
-    dev: false
+    dev: true
     engines:
       node: '>= 0.10'
     resolution:
@@ -197,7 +205,7 @@ packages:
   /resolve/1.17.0:
     dependencies:
       path-parse: 1.0.6
-    dev: false
+    dev: true
     resolution:
       integrity: sha512-ic+7JYiV8Vi2yzQGFWOkiZD5Z9z7O2Zhm9XMaTxdJExKasieFCr+yXZ/WmXsckHiKl12ar0y6XiXDx3m4RHn1w==
   /shelljs/0.8.4:
@@ -205,14 +213,14 @@ packages:
       glob: 7.1.6
       interpret: 1.2.0
       rechoir: 0.6.2
-    dev: false
+    dev: true
     engines:
       node: '>=4'
     hasBin: true
     resolution:
       integrity: sha512-7gk3UZ9kOfPLIAbslLzyWeGiEqx9e3rxwZM0KE6EL8GlGwjym9Mrlx5/p33bWTu9YG6vcS4MBxYZDHYr5lr8BQ==
   /source-map/0.6.1:
-    dev: false
+    dev: true
     engines:
       node: '>=0.10.0'
     resolution:
@@ -220,12 +228,12 @@ packages:
   /typedoc-default-themes/0.10.1:
     dependencies:
       lunr: 2.3.8
-    dev: false
+    dev: true
     engines:
       node: '>= 8'
     resolution:
       integrity: sha512-SuqAQI0CkwhqSJ2kaVTgl37cWs733uy9UGUqwtcds8pkFK8oRF4rZmCq+FXTGIb9hIUOu40rf5Kojg0Ha6akeg==
-  /typedoc/0.17.4_typescript@3.8.3:
+  /typedoc/0.17.4:
     dependencies:
       fs-extra: 8.1.0
       handlebars: 4.7.6
@@ -237,8 +245,7 @@ packages:
       progress: 2.0.3
       shelljs: 0.8.4
       typedoc-default-themes: 0.10.1
-      typescript: 3.8.3
-    dev: false
+    dev: true
     engines:
       node: '>= 8.0.0'
     hasBin: true
@@ -246,16 +253,10 @@ packages:
       typescript: '>=3.8.3'
     resolution:
       integrity: sha512-4Lotef1l6lNU5Fulpux809WPlF9CkmcXfv5QFyanrjYlxMFxSdARRdsy8Jv1OU3z0vjR4JsvUQT0YpiPqztcOA==
-  /typescript/3.8.3:
-    engines:
-      node: '>=4.2.0'
-    hasBin: true
-    resolution:
-      integrity: sha512-MYlEfn5VrLNsgudQTVJeNaQFUAI7DkhnOjdpAp4T+ku1TfQClewlbSuTVHiA+8skNBgaf02TL/kLOvig4y3G8w==
   /uglify-js/3.9.1:
     dependencies:
       commander: 2.20.3
-    dev: false
+    dev: true
     engines:
       node: '>=0.8.0'
     hasBin: true
@@ -263,22 +264,22 @@ packages:
     resolution:
       integrity: sha512-JUPoL1jHsc9fOjVFHdQIhqEEJsQvfKDjlubcCilu8U26uZ73qOg8VsN8O1jbuei44ZPlwL7kmbAdM4tzaUvqnA==
   /universalify/0.1.2:
-    dev: false
+    dev: true
     engines:
       node: '>= 4.0.0'
     resolution:
       integrity: sha512-rBJeI5CXAlmy1pV+617WB9J63U6XcazHHF2f2dbJix4XzpUF0RS3Zbj0FGIOCAva5P/d/GBOYaACQ1w+0azUkg==
   /wordwrap/1.0.0:
-    dev: false
+    dev: true
     resolution:
       integrity: sha1-J1hIEIkUVqQXHI0CJkQa3pDLyus=
   /wrappy/1.0.2:
-    dev: false
+    dev: true
     resolution:
       integrity: sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=
 specifiers:
   gd-bs: ^2.1.3
   gd-sprest: ^5.5.3
+  gd-sprest-bs: ^3.9.0
   gd-sprest-def: ^0.7.7
   typedoc: ^0.17.4
-  typescript: ^3.8.3

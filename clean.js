@@ -1,11 +1,11 @@
 var fs = require('fs');
 
 // Copy a directory
-function copyDirectory(src, target) {
+function copyDirectory(src, target, appendFl) {
     // See if the target exists
     if (fs.existsSync(target)) {
-        // Delete the target
-        deleteDirectory(target);
+        // Delete the target if we aren't appending files to it
+        appendFl != true ? deleteDirectory(target) : null;
     } else {
         // Create the directory
         fs.mkdirSync(target);
@@ -26,8 +26,11 @@ function copyDirectory(src, target) {
 
                 copyDirectory(srcPath, targetPath);
             } else {
-                // Copy the file
-                fs.copyFileSync(srcPath, targetPath);
+                // Ensure we don't overwrite files
+                if (appendFl != true || fs.existsSync(targetPath) == false) {
+                    // Copy the file
+                    fs.copyFileSync(srcPath, targetPath);
+                }
             }
         });
     }
@@ -70,10 +73,12 @@ console.log("Copying the definitions");
 copyDirectory("./node_modules/gd-bs/@types", "./components");
 copyDirectory("./node_modules/gd-sprest/@types", "./@types");
 copyDirectory("./node_modules/gd-sprest-def/lib", "./lib");
+copyDirectory("./node_modules/gd-sprest-bs/@types/components", "./components/components", true);
+copyDirectory("./node_modules/gd-sprest-bs/@types/webparts", "./components/webparts", true);
 
 // Copy the documentation
-fs.copyFileSync("./node_modules/gd-bs/README.md", "./components/README.md");
 fs.copyFileSync("./node_modules/gd-sprest/README.md", "./@types/README.md");
+fs.copyFileSync("./node_modules/gd-sprest-bs/README.md", "./components/README.md");
 
 // Log
 console.log("Successfully cleaned the library");

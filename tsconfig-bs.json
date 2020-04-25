@@ -11,8 +11,10 @@
             "components"
         ],
         "exclude": [
+            "components/base.d.ts",
             "components/index.d.ts",
-            "components/base.d.ts"
+            "components/components/index.d.ts",
+            "components/webparts/index.d.ts"
         ],
         "excludeExternals": true,
         "includeDeclarations": true,
