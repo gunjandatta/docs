@@ -1,5 +1,5 @@
 dependencies:
-  gd-bs: 3.0.4
+  gd-bs: 3.0.5
   gd-sprest: 5.8.4
   gd-sprest-bs: 5.0.3
   gd-sprest-def: 0.7.8
@@ -53,17 +53,17 @@ packages:
     dev: true
     resolution:
       integrity: sha1-FQStJSMVjKpA20onh8sBQRmU6k8=
-  /gd-bs/3.0.4:
+  /gd-bs/3.0.5:
     dependencies:
       bootstrap: 5.0.0-alpha1_popper.js@1.16.1
       popper.js: 1.16.1
     dev: false
     resolution:
-      integrity: sha512-oln+FuldXXOeWDCJhTf+bCARgPpcBO63z8emZ8iVdHXaVebo2BpeoEcZz4AlPUgTyTBpWryvctSnECTf0lBraw==
+      integrity: sha512-DXHVum4bF9boCCOWrp7C5lxBARnOD6OvgLc2OOnCs3f1QfrXhHsYTikNnAqkpxxqvtF4LkBovp7MZ7O23k24Yg==
   /gd-sprest-bs/5.0.3:
     dependencies:
       flatpickr: 4.6.3
-      gd-bs: 3.0.4
+      gd-bs: 3.0.5
       gd-sprest: 5.8.4
       gd-sprest-def: 0.7.8
     dev: false
@@ -274,7 +274,7 @@ packages:
     resolution:
       integrity: sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=
 specifiers:
-  gd-bs: ^3.0.4
+  gd-bs: ^3.0.5
   gd-sprest: ^5.8.4
   gd-sprest-bs: ^5.0.3
   gd-sprest-def: ^0.7.8
