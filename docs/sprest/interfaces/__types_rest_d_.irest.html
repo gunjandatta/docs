@@ -93,6 +93,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="__types_rest_d_.irest.html#apps" class="tsd-kind-icon">Apps</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="__types_rest_d_.irest.html#contextinfo" class="tsd-kind-icon">Context<wbr>Info</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="__types_rest_d_.irest.html#defaultrequesttohostfl" class="tsd-kind-icon">Default<wbr>Request<wbr>ToHost<wbr>Fl</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="__types_rest_d_.irest.html#graph" class="tsd-kind-icon">Graph</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="__types_rest_d_.irest.html#groupservice" class="tsd-kind-icon">Group<wbr>Service</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="__types_rest_d_.irest.html#groupsitemanager" class="tsd-kind-icon">Group<wbr>Site<wbr>Manager</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="__types_rest_d_.irest.html#helper" class="tsd-kind-icon">Helper</a></li>
@@ -109,6 +110,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="__types_rest_d_.irest.html#search" class="tsd-kind-icon">Search</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="__types_rest_d_.irest.html#site" class="tsd-kind-icon">Site</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="__types_rest_d_.irest.html#siteexists" class="tsd-kind-icon">Site<wbr>Exists</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="__types_rest_d_.irest.html#sitemanager" class="tsd-kind-icon">Site<wbr>Manager</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="__types_rest_d_.irest.html#siteurl" class="tsd-kind-icon">Site<wbr>Url</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="__types_rest_d_.irest.html#socialfeed" class="tsd-kind-icon">Social<wbr>Feed</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="__types_rest_d_.irest.html#thememanager" class="tsd-kind-icon">Theme<wbr>Manager</a></li>
@@ -209,6 +211,21 @@
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>False by default.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="graph" class="tsd-anchor"></a>
+					<h3>Graph</h3>
+					<div class="tsd-signature tsd-kind-icon">Graph<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">IGraph</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in @types/rest.d.ts:45</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Use this api to interact with the Graph API. (Still In Development)</p>
 						</div>
 					</div>
 				</section>
@@ -471,7 +488,7 @@
 					<div class="tsd-signature tsd-kind-icon">SPTypes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ISPTypes</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in @types/rest.d.ts:151</li>
+							<li>Defined in @types/rest.d.ts:156</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -524,7 +541,7 @@
 					<div class="tsd-signature tsd-kind-icon">Site<wbr>Exists<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>url<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">IBaseExecution</span><span class="tsd-signature-symbol">&lt;</span><a href="__types_lib_site_d_.isiteexists.html" class="tsd-signature-type">ISiteExists</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in @types/rest.d.ts:135</li>
+							<li>Defined in @types/rest.d.ts:140</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -560,12 +577,27 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="sitemanager" class="tsd-anchor"></a>
+					<h3>Site<wbr>Manager</h3>
+					<div class="tsd-signature tsd-kind-icon">Site<wbr>Manager<span class="tsd-signature-symbol">:</span> <a href="__types_lib_sitemanager_d_.isitemanager.html" class="tsd-signature-type">ISiteManager</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in @types/rest.d.ts:134</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Use this api to create/delete site collections.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="siteurl" class="tsd-anchor"></a>
 					<h3>Site<wbr>Url</h3>
 					<div class="tsd-signature tsd-kind-icon">Site<wbr>Url<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">IBaseExecution</span><span class="tsd-signature-symbol">&lt;</span><a href="__types_lib_site_d_.isiteurl.html" class="tsd-signature-type">ISiteUrl</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in @types/rest.d.ts:141</li>
+							<li>Defined in @types/rest.d.ts:146</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -606,7 +638,7 @@
 					<div class="tsd-signature tsd-kind-icon">Social<wbr>Feed<span class="tsd-signature-symbol">:</span> <a href="__types_lib_socialfeed_d_.isocialfeed.html" class="tsd-signature-type">ISocialFeed</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in @types/rest.d.ts:146</li>
+							<li>Defined in @types/rest.d.ts:151</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -621,7 +653,7 @@
 					<div class="tsd-signature tsd-kind-icon">Theme<wbr>Manager<span class="tsd-signature-symbol">:</span> <a href="__types_lib_thememanager_d_.ithememanager.html" class="tsd-signature-type">IThemeManager</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in @types/rest.d.ts:156</li>
+							<li>Defined in @types/rest.d.ts:161</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -636,7 +668,7 @@
 					<div class="tsd-signature tsd-kind-icon">User<wbr>Profile<span class="tsd-signature-symbol">:</span> <a href="__types_lib_userprofile_d_.iuserprofile.html" class="tsd-signature-type">IUserProfile</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in @types/rest.d.ts:161</li>
+							<li>Defined in @types/rest.d.ts:166</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -651,7 +683,7 @@
 					<div class="tsd-signature tsd-kind-icon">Utility<span class="tsd-signature-symbol">:</span> <a href="__types_lib_utility_d_.iutility.html" class="tsd-signature-type">IUtility</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in @types/rest.d.ts:166</li>
+							<li>Defined in @types/rest.d.ts:171</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -666,7 +698,7 @@
 					<div class="tsd-signature tsd-kind-icon">Web<span class="tsd-signature-symbol">:</span> <a href="__types_lib_web_d_.iweb.html" class="tsd-signature-type">IWeb</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in @types/rest.d.ts:171</li>
+							<li>Defined in @types/rest.d.ts:176</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -681,7 +713,7 @@
 					<div class="tsd-signature tsd-kind-icon">Workflow<wbr>Instance<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="__types_lib_wfinstanceservice_d_.iworkflowinstanceservice.html" class="tsd-signature-type">IWorkflowInstanceService</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in @types/rest.d.ts:176</li>
+							<li>Defined in @types/rest.d.ts:181</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -696,7 +728,7 @@
 					<div class="tsd-signature tsd-kind-icon">Workflow<wbr>Subscription<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="__types_lib_wfsubscriptionservice_d_.iworkflowsubscriptionservice.html" class="tsd-signature-type">IWorkflowSubscriptionService</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in @types/rest.d.ts:181</li>
+							<li>Defined in @types/rest.d.ts:186</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -787,6 +819,9 @@
 								<a href="__types_rest_d_.irest.html#defaultrequesttohostfl" class="tsd-kind-icon">Default<wbr>Request<wbr>ToHost<wbr>Fl</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="__types_rest_d_.irest.html#graph" class="tsd-kind-icon">Graph</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="__types_rest_d_.irest.html#groupservice" class="tsd-kind-icon">Group<wbr>Service</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
@@ -833,6 +868,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="__types_rest_d_.irest.html#siteexists" class="tsd-kind-icon">Site<wbr>Exists</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="__types_rest_d_.irest.html#sitemanager" class="tsd-kind-icon">Site<wbr>Manager</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="__types_rest_d_.irest.html#siteurl" class="tsd-kind-icon">Site<wbr>Url</a>

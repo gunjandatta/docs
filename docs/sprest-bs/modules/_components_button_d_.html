@@ -117,7 +117,7 @@
 					<div class="tsd-signature tsd-kind-icon">IButton<wbr>Types<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>Danger<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>Dark<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>Info<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>Light<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>Link<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>OutlineDanger<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>OutlineDark<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>OutlineInfo<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>OutlineLight<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>OutlineLink<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>OutlinePrimary<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>OutlineSecondary<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>OutlineSuccess<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>OutlineWarning<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>Primary<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>Secondary<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>Success<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>Warning<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in components/components/button.d.ts:99</li>
+							<li>Defined in components/components/button.d.ts:106</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -203,15 +203,15 @@
 								<h3>Button</h3>
 							</a>
 						</div>
-						<pre><code class="language-ts"><span class="hljs-keyword">import</span> { Components } <span class="hljs-keyword">from</span> <span class="hljs-string">"gd-sprest-bs"</span>;
+						<pre><code class="language-ts"><span class="hljs-keyword">import</span> { Components } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;gd-sprest-bs&quot;</span>;
 
 <span class="hljs-comment">// Create the button</span>
-<span class="hljs-keyword">let</span> el = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">"#btn"</span>);
+<span class="hljs-keyword">let</span> el = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#btn&quot;</span>);
 <span class="hljs-keyword">let</span> btn = Components.Button({
     el: el,
-    text: <span class="hljs-string">"Button"</span>,
+    text: <span class="hljs-string">&quot;Button&quot;</span>,
     onClick: <span class="hljs-function">(<span class="hljs-params">ev</span>) =&gt;</span> {
-        alert(<span class="hljs-string">"The button was clicked."</span>);
+        alert(<span class="hljs-string">&quot;The button was clicked.&quot;</span>);
     }
 });</code></pre>
 					</div>

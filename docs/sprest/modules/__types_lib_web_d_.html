@@ -104,7 +104,7 @@
 						<a href="#get-current-web" id="get-current-web" style="color: inherit; text-decoration: none;">
 							<h4>Get current web</h4>
 						</a>
-						<pre><code class="language-typescript"><span class="hljs-keyword">import</span> { Web } <span class="hljs-keyword">from</span> <span class="hljs-string">"gd-sprest"</span>;
+						<pre><code class="language-typescript"><span class="hljs-keyword">import</span> { Web } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;gd-sprest&quot;</span>;
 
 Web().execute(<span class="hljs-function"><span class="hljs-params">web</span> =&gt;</span> {
   <span class="hljs-keyword">let</span> title = web.Title;
@@ -112,10 +112,10 @@ Web().execute(<span class="hljs-function"><span class="hljs-params">web</span> =
 						<a href="#query-a-list-to-include-various-collections" id="query-a-list-to-include-various-collections" style="color: inherit; text-decoration: none;">
 							<h4>Query a list to include various collections</h4>
 						</a>
-						<pre><code class="language-typescript"><span class="hljs-keyword">import</span> { Web } <span class="hljs-keyword">from</span> <span class="hljs-string">"gd-sprest"</span>;
+						<pre><code class="language-typescript"><span class="hljs-keyword">import</span> { Web } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;gd-sprest&quot;</span>;
 
 Web().query({
- Expand: [<span class="hljs-string">"ContentTypes"</span>, <span class="hljs-string">"Fields"</span>, <span class="hljs-string">"Lists"</span>, <span class="hljs-string">"RootFolder"</span>]
+ Expand: [<span class="hljs-string">&quot;ContentTypes&quot;</span>, <span class="hljs-string">&quot;Fields&quot;</span>, <span class="hljs-string">&quot;Lists&quot;</span>, <span class="hljs-string">&quot;RootFolder&quot;</span>]
 }).execute(<span class="hljs-function"><span class="hljs-params">web</span> =&gt;</span> {
   <span class="hljs-keyword">let</span> contentTypes = web.ContentTypes.results;
   <span class="hljs-keyword">let</span> fields = web.Fields.results;

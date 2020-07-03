@@ -109,7 +109,7 @@
 						<a href="#get-list-from-the-current-site-collection" id="get-list-from-the-current-site-collection" style="color: inherit; text-decoration: none;">
 							<h4>Get list from the current site collection</h4>
 						</a>
-						<pre><code class="language-typescript"><span class="hljs-keyword">import</span> { Site } <span class="hljs-keyword">from</span> <span class="hljs-string">"gd-sprest"</span>;
+						<pre><code class="language-typescript"><span class="hljs-keyword">import</span> { Site } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;gd-sprest&quot;</span>;
 
 Site().execute(<span class="hljs-function"><span class="hljs-params">site</span> =&gt;</span> {
   <span class="hljs-keyword">let</span> hubSiteId = site.HubSiteId;
@@ -117,10 +117,10 @@ Site().execute(<span class="hljs-function"><span class="hljs-params">site</span>
 						<a href="#query-a-list-to-include-various-collections" id="query-a-list-to-include-various-collections" style="color: inherit; text-decoration: none;">
 							<h4>Query a list to include various collections</h4>
 						</a>
-						<pre><code class="language-typescript"><span class="hljs-keyword">import</span> { Site } <span class="hljs-keyword">from</span> <span class="hljs-string">"gd-sprest"</span>;
+						<pre><code class="language-typescript"><span class="hljs-keyword">import</span> { Site } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;gd-sprest&quot;</span>;
 
 Site().query({
- Expand: [<span class="hljs-string">"UserCustomActions"</span>]
+ Expand: [<span class="hljs-string">&quot;UserCustomActions&quot;</span>]
 }).execute(<span class="hljs-function"><span class="hljs-params">list</span> =&gt;</span> {
   <span class="hljs-keyword">let</span> actions = site.UserCustomActions.results;
 });</code></pre>

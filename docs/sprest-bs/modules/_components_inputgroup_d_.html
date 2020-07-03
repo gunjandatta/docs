@@ -115,10 +115,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module">
 					<a name="iinputgrouptypes" class="tsd-anchor"></a>
 					<h3>IInput<wbr>Group<wbr>Types</h3>
-					<div class="tsd-signature tsd-kind-icon">IInput<wbr>Group<wbr>Types<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>Email<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>File<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>Password<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>Range<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>Search<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>TextArea<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>TextField<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></div>
+					<div class="tsd-signature tsd-kind-icon">IInput<wbr>Group<wbr>Types<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>ColorPicker<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>Email<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>File<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>Password<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>Range<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>Search<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>TextArea<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>TextField<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in components/components/inputGroup.d.ts:94</li>
+							<li>Defined in components/components/inputGroup.d.ts:91</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -129,6 +129,9 @@
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>Color<wbr>Picker<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+							</li>
 							<li class="tsd-parameter">
 								<h5>Email<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
 							</li>
@@ -171,14 +174,14 @@
 								<h3>Input Group</h3>
 							</a>
 						</div>
-						<pre><code class="language-ts"><span class="hljs-keyword">import</span> { Components } <span class="hljs-keyword">from</span> <span class="hljs-string">"gd-sprest-bs"</span>;
+						<pre><code class="language-ts"><span class="hljs-keyword">import</span> { Components } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;gd-sprest-bs&quot;</span>;
 
 <span class="hljs-comment">// Create the inputGroup</span>
-<span class="hljs-keyword">let</span> el = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">"#inputGroup"</span>);
-<span class="hljs-keyword">let</span> inputGroup = Components.inputGroup({
+<span class="hljs-keyword">let</span> el = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#inputGroup&quot;</span>);
+<span class="hljs-keyword">let</span> inputGroup = Components.InputGroup({
     el: el,
-    label: <span class="hljs-string">"My Name:"</span>,
-    value: <span class="hljs-string">"First Last"</span>
+    label: <span class="hljs-string">&quot;My Name:&quot;</span>,
+    value: <span class="hljs-string">&quot;First Last&quot;</span>
 });</code></pre>
 					</div>
 					<div class="tsd-type-declaration">

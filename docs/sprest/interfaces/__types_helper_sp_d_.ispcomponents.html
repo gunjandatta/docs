@@ -115,13 +115,13 @@
 							<a href="#how-to-create-a-callout" id="how-to-create-a-callout" style="color: inherit; text-decoration: none;">
 								<h3>How to create a callout</h3>
 							</a>
-							<pre><code class="language-ts">Helper.SP.CalloutManager.init().then(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+							<pre><code class="language-ts">Helper.SP.CalloutManager.init().then(<span class="hljs-function">() =&gt;</span> {
   <span class="hljs-comment">// Create the callout</span>
   <span class="hljs-keyword">let</span> callout = Helper.SP.CalloutManager.createNewIfNecessary({
-    ID: <span class="hljs-string">"UniqueId"</span>,
-    launchPoint: <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">"input[value='Run']"</span>),
-    title: <span class="hljs-string">"My Custom Callout"</span>,
-    content: <span class="hljs-string">"&lt;p&gt;This is the content of the callout. An element can be applied instead of a string."</span>
+    ID: <span class="hljs-string">&quot;UniqueId&quot;</span>,
+    launchPoint: <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;input[value=&#x27;Run&#x27;]&quot;</span>),
+    title: <span class="hljs-string">&quot;My Custom Callout&quot;</span>,
+    content: <span class="hljs-string">&quot;&lt;p&gt;This is the content of the callout. An element can be applied instead of a string.&quot;</span>
   });
 });</code></pre>
 						</div>
@@ -141,7 +141,7 @@
 							<a href="#how-to-create-a-modal-dialog" id="how-to-create-a-modal-dialog" style="color: inherit; text-decoration: none;">
 								<h3>How to create a modal dialog</h3>
 							</a>
-							<pre><code class="language-ts">Helper.SP.ModalDialog.showWaitScreenWithNoClose(<span class="hljs-string">"Loading the Data"</span>).then(<span class="hljs-function"><span class="hljs-params">dlg</span> =&gt;</span> {
+							<pre><code class="language-ts">Helper.SP.ModalDialog.showWaitScreenWithNoClose(<span class="hljs-string">&quot;Loading the Data&quot;</span>).then(<span class="hljs-function"><span class="hljs-params">dlg</span> =&gt;</span> {
   <span class="hljs-comment">// Do Stuff and then close the dialog</span>
   dlg.close();
 });</code></pre>
@@ -162,7 +162,7 @@
 							<a href="#how-to-create-a-notification" id="how-to-create-a-notification" style="color: inherit; text-decoration: none;">
 								<h3>How to create a notification</h3>
 							</a>
-							<pre><code class="language-ts">Helper.SP.Notify.addNotifition(<span class="hljs-string">"This is a notification."</span>, <span class="hljs-literal">false</span>);</code></pre>
+							<pre><code class="language-ts">Helper.SP.Notify.addNotifition(<span class="hljs-string">&quot;This is a notification.&quot;</span>, <span class="hljs-literal">false</span>);</code></pre>
 						</div>
 					</div>
 				</section>
@@ -180,9 +180,9 @@
 							<a href="#how-to-wait-for-a-library-to-be-loaded" id="how-to-wait-for-a-library-to-be-loaded" style="color: inherit; text-decoration: none;">
 								<h3>How to wait for a library to be loaded</h3>
 							</a>
-							<pre><code class="language-ts">Helper.SP.SOD.executeOrDelayUntilScriptLoaded(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+							<pre><code class="language-ts">Helper.SP.SOD.executeOrDelayUntilScriptLoaded(<span class="hljs-function">() =&gt;</span> {
   <span class="hljs-comment">// Do Stuff</span>
-}, <span class="hljs-string">"gd-sprest"</span>);</code></pre>
+}, <span class="hljs-string">&quot;gd-sprest&quot;</span>);</code></pre>
 						</div>
 					</div>
 				</section>
@@ -200,7 +200,7 @@
 							<a href="#how-to-create-a-status" id="how-to-create-a-status" style="color: inherit; text-decoration: none;">
 								<h3>How to create a status</h3>
 							</a>
-							<pre><code class="language-ts">Helper.SP.Status.addStatus(<span class="hljs-string">"Success"</span>, <span class="hljs-string">"This is a custom status."</span>);</code></pre>
+							<pre><code class="language-ts">Helper.SP.Status.addStatus(<span class="hljs-string">&quot;Success&quot;</span>, <span class="hljs-string">&quot;This is a custom status.&quot;</span>);</code></pre>
 						</div>
 					</div>
 				</section>

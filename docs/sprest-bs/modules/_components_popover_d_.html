@@ -127,7 +127,7 @@
 					<div class="tsd-signature tsd-kind-icon">IPopover<wbr>Types<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>Auto<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>Bottom<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>Left<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>Right<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>Top<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in components/components/popover.d.ts:118</li>
+							<li>Defined in components/components/popover.d.ts:123</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -174,21 +174,21 @@
 								<h3>Popover</h3>
 							</a>
 						</div>
-						<pre><code class="language-ts"><span class="hljs-keyword">import</span> { Components } <span class="hljs-keyword">from</span> <span class="hljs-string">"gd-sprest-bs"</span>;
+						<pre><code class="language-ts"><span class="hljs-keyword">import</span> { Components } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;gd-sprest-bs&quot;</span>;
 
 <span class="hljs-comment">// Create the popover</span>
-<span class="hljs-keyword">let</span> el = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">"#popover"</span>);
+<span class="hljs-keyword">let</span> el = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#popover&quot;</span>);
 <span class="hljs-keyword">let</span> popover = Components.Popover({
     el: el,
     isDismissible: <span class="hljs-literal">true</span>,
     btnProps: {
-        text: <span class="hljs-string">"Popover Demo"</span>
+        text: <span class="hljs-string">&quot;Popover Demo&quot;</span>
     },
     options: {
-        container: <span class="hljs-string">"body"</span>,
-        content: <span class="hljs-string">"This is the popover content."</span>,
-        title: <span class="hljs-string">"My Popover"</span>,
-        trigger: <span class="hljs-string">"hover"</span>
+        container: <span class="hljs-string">&quot;body&quot;</span>,
+        content: <span class="hljs-string">&quot;This is the popover content.&quot;</span>,
+        title: <span class="hljs-string">&quot;My Popover&quot;</span>,
+        trigger: <span class="hljs-string">&quot;hover&quot;</span>
     }
 });</code></pre>
 					</div>

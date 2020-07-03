@@ -32,6 +32,11 @@ function updateReference(src, onReplace) {
 console.log("Updating the references");
 
 // Update the references
+updateReference("./@types/helper/methods", function (data, file) {
+    // Return the content
+    return data.replace(/"gd-sprest-def"/g, '"../../../lib"')
+        .replace(/gd-sprest-def/g, file == "rest.d.ts" ? "../.." : "../../..");
+});
 updateReference("./@types", function (data, file) {
     // Return the content
     return data.replace(/"gd-sprest-def"/g, '"../../lib"')
@@ -39,7 +44,7 @@ updateReference("./@types", function (data, file) {
 });
 updateReference("./components/components", function (data) {
     // Return the content
-    return data.replace(/"gd-bs\/components/g, "\".")
+    return data.replace(/"gd-bs\/@types\/components/g, "\".")
         .replace(/"gd-bs/g, "\".")
         .replace(/"gd-sprest/g, "\"../../@types")
         .replace(/\* import { Components } from "..\/..\/@types-bs"/g, '* import { Components } from "gd-sprest-bs"');

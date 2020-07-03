@@ -65,6 +65,7 @@ console.log("Deleting the docs");
 // Delete the folder
 deleteDirectory("./docs/sprest");
 deleteDirectory("./docs/sprest-bs");
+deleteDirectory("./lib");
 
 // Log
 console.log("Copying the definitions");

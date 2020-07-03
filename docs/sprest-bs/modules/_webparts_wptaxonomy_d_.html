@@ -108,18 +108,18 @@
 							</a>
 						</div>
 						<p>The taxonomy webpart should be used when targeting the term store as a datasource.</p>
-						<pre><code class="language-ts"><span class="hljs-keyword">import</span> { WebParts } <span class="hljs-keyword">from</span> <span class="hljs-string">"gd-sprest-bs"</span>;
+						<pre><code class="language-ts"><span class="hljs-keyword">import</span> { WebParts } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;gd-sprest-bs&quot;</span>;
 
 <span class="hljs-comment">// Create the webpart</span>
 WebParts.WPTaxonomy({
-    elementId: <span class="hljs-string">"my-wpTaxonomy"</span>,
-    cfgElementId: <span class="hljs-string">"my-wpTaxonomy-cfg"</span>,
+    elementId: <span class="hljs-string">&quot;my-wpTaxonomy&quot;</span>,
+    cfgElementId: <span class="hljs-string">&quot;my-wpTaxonomy-cfg&quot;</span>,
     onRenderTermSetTerms: <span class="hljs-function">(<span class="hljs-params">wpInfo, terms</span>) =&gt;</span> {
         <span class="hljs-comment">// Render the display element</span>
         wpInfo.el.innerHTML = [
-            <span class="hljs-string">'&lt;h1&gt;Term Set: '</span> + wpInfo.TermSetName + <span class="hljs-string">'&lt;/h1&gt;'</span>,
-            <span class="hljs-string">'&lt;h5&gt;Terms: '</span> + terms.length + <span class="hljs-string">'&lt;/h5&gt;'</span>
-        ].join(<span class="hljs-string">'\n'</span>);
+            <span class="hljs-string">&#x27;&lt;h1&gt;Term Set: &#x27;</span> + wpInfo.TermSetName + <span class="hljs-string">&#x27;&lt;/h1&gt;&#x27;</span>,
+            <span class="hljs-string">&#x27;&lt;h5&gt;Terms: &#x27;</span> + terms.length + <span class="hljs-string">&#x27;&lt;/h5&gt;&#x27;</span>
+        ].join(<span class="hljs-string">&#x27;\n&#x27;</span>);
     }
 });</code></pre>
 					</div>

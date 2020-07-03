@@ -103,13 +103,13 @@
 						</a>
 						<p>This is required for making POST requests on webs in different site collections.</p>
 						<pre><code class="language-ts"><span class="hljs-comment">// Get the context information of the root web</span>
-ContextInfo.getWeb(<span class="hljs-string">"/"</span>).execute(<span class="hljs-function">(<span class="hljs-params">contextInfo</span>) =&gt;</span> {
+ContextInfo.getWeb(<span class="hljs-string">&quot;/&quot;</span>).execute(<span class="hljs-function">(<span class="hljs-params">contextInfo</span>) =&gt;</span> {
     <span class="hljs-comment">// Get the root web</span>
-    Web(<span class="hljs-string">"/"</span>, { requestDigest: contextInfo.GetContextWebInformation.FormDigestValue })
-        <span class="hljs-comment">// Get the 'Site Assets' library</span>
-        .Lists(<span class="hljs-string">"Site Assets"</span>)
+    Web(<span class="hljs-string">&quot;/&quot;</span>, { requestDigest: contextInfo.GetContextWebInformation.FormDigestValue })
+        <span class="hljs-comment">// Get the &#x27;Site Assets&#x27; library</span>
+        .Lists(<span class="hljs-string">&quot;Site Assets&quot;</span>)
         <span class="hljs-comment">// Query for the items</span>
-        .getItemsByQuery(<span class="hljs-string">"&lt;Query&gt;&lt;OrderBy&gt;&lt;FieldRef Name='ID' /&gt;&lt;/OrderBy&gt;&lt;/Query&gt;"</span>)
+        .getItemsByQuery(<span class="hljs-string">&quot;&lt;Query&gt;&lt;OrderBy&gt;&lt;FieldRef Name=&#x27;ID&#x27; /&gt;&lt;/OrderBy&gt;&lt;/Query&gt;&quot;</span>)
         <span class="hljs-comment">// Execute the request</span>
         .execute(<span class="hljs-function"><span class="hljs-params">items</span> =&gt;</span> {
             <span class="hljs-comment">// Parse the items</span>

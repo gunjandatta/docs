@@ -106,14 +106,14 @@
 						<a href="#get-list-from-the-current-web" id="get-list-from-the-current-web" style="color: inherit; text-decoration: none;">
 							<h4>Get list from the current web</h4>
 						</a>
-						<pre><code class="language-typescript">List(<span class="hljs-string">"Site Assets"</span>).execute(<span class="hljs-function"><span class="hljs-params">list</span> =&gt;</span> {
+						<pre><code class="language-typescript">List(<span class="hljs-string">&quot;Site Assets&quot;</span>).execute(<span class="hljs-function"><span class="hljs-params">list</span> =&gt;</span> {
   <span class="hljs-keyword">let</span> title = list.Title;
 });</code></pre>
 						<a href="#query-a-list-to-include-various-collections" id="query-a-list-to-include-various-collections" style="color: inherit; text-decoration: none;">
 							<h4>Query a list to include various collections</h4>
 						</a>
-						<pre><code class="language-typescript">List(<span class="hljs-string">"Site Assets"</span>).query({
- Expand: [<span class="hljs-string">"ContentTypes"</span>, <span class="hljs-string">"Fields"</span>, <span class="hljs-string">"Views"</span>]
+						<pre><code class="language-typescript">List(<span class="hljs-string">&quot;Site Assets&quot;</span>).query({
+ Expand: [<span class="hljs-string">&quot;ContentTypes&quot;</span>, <span class="hljs-string">&quot;Fields&quot;</span>, <span class="hljs-string">&quot;Views&quot;</span>]
 }).execute(<span class="hljs-function"><span class="hljs-params">list</span> =&gt;</span> {
   <span class="hljs-keyword">let</span> contentTypes = list.ContentTypes.results;
   <span class="hljs-keyword">let</span> fields = list.Fields.results;

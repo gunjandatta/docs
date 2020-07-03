@@ -99,7 +99,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/_components_collapse_d_.icollapse.html" class="tsd-kind-icon">ICollapse</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/_components_collapse_d_.icollapseoptions.html" class="tsd-kind-icon">ICollapse<wbr>Options</a></li>
-								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/_components_collapse_d_.icollapseprops.html" class="tsd-kind-icon">ICollapse<wbr>Props</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter"><a href="../interfaces/_components_collapse_d_.icollapseprops.html" class="tsd-kind-icon">ICollapse<wbr>Props</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -128,22 +128,22 @@
 								<h3>Collapse</h3>
 							</a>
 						</div>
-						<pre><code class="language-ts"><span class="hljs-keyword">import</span> { Components } <span class="hljs-keyword">from</span> <span class="hljs-string">"gd-sprest-bs"</span>;
+						<pre><code class="language-ts"><span class="hljs-keyword">import</span> { Components } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;gd-sprest-bs&quot;</span>;
 
 <span class="hljs-comment">// Create the button to toggle the collapse</span>
 <span class="hljs-keyword">let</span> btn = Components.Button({
-    el: <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">"#btnCollapse"</span>),
-    target: <span class="hljs-string">"#demoCollapse"</span>,
-    toggle: <span class="hljs-string">"collapse"</span>,
-    text: <span class="hljs-string">"Collapse Demo"</span>
+    el: <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#btnCollapse&quot;</span>),
+    target: <span class="hljs-string">&quot;#demoCollapse&quot;</span>,
+    toggle: <span class="hljs-string">&quot;collapse&quot;</span>,
+    text: <span class="hljs-string">&quot;Collapse Demo&quot;</span>
 });
 
 <span class="hljs-comment">// Create the collapse</span>
-<span class="hljs-keyword">let</span> el = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">"#collapse"</span>);
+<span class="hljs-keyword">let</span> el = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#collapse&quot;</span>);
 <span class="hljs-keyword">let</span> collapse = Components.Collapse({
     el: el,
-     id: <span class="hljs-string">"demoCollapse"</span>,
-    content: <span class="hljs-string">"This is the content to be collapsed."</span>
+     id: <span class="hljs-string">&quot;demoCollapse&quot;</span>,
+    content: <span class="hljs-string">&quot;This is the content to be collapsed.&quot;</span>
 });</code></pre>
 					</div>
 					<div class="tsd-type-declaration">
@@ -189,7 +189,7 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="../interfaces/_components_collapse_d_.icollapseoptions.html" class="tsd-kind-icon">ICollapse<wbr>Options</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter">
 						<a href="../interfaces/_components_collapse_d_.icollapseprops.html" class="tsd-kind-icon">ICollapse<wbr>Props</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module">

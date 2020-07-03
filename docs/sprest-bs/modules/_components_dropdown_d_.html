@@ -125,7 +125,7 @@
 					<div class="tsd-signature tsd-kind-icon">IDropdown<wbr>Types<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>Danger<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>Info<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>Primary<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>Secondary<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>Success<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>Warning<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in components/components/dropdown.d.ts:134</li>
+							<li>Defined in components/components/dropdown.d.ts:137</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -175,22 +175,22 @@
 								<h3>Dropdown</h3>
 							</a>
 						</div>
-						<pre><code class="language-ts"><span class="hljs-keyword">import</span> { Components } <span class="hljs-keyword">from</span> <span class="hljs-string">"gd-sprest-bs"</span>;
+						<pre><code class="language-ts"><span class="hljs-keyword">import</span> { Components } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;gd-sprest-bs&quot;</span>;
 
 <span class="hljs-comment">// Create the dropdown</span>
-<span class="hljs-keyword">let</span> el = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">"#dropdown"</span>);
+<span class="hljs-keyword">let</span> el = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#dropdown&quot;</span>);
 <span class="hljs-keyword">let</span> dropdown = Components.Dropdown({
     el: el,
-    label: <span class="hljs-string">"Select a Choice"</span>,
+    label: <span class="hljs-string">&quot;Select a Choice&quot;</span>,
     items: [
-        { text: <span class="hljs-string">"Choice 1"</span>, value: <span class="hljs-string">"1"</span> },
-        { text: <span class="hljs-string">"Choice 2"</span>, value: <span class="hljs-string">"2"</span> },
-        { text: <span class="hljs-string">"Choice 3"</span>, value: <span class="hljs-string">"3"</span> },
-        { text: <span class="hljs-string">"Choice 4"</span>, value: <span class="hljs-string">"4"</span> },
-        { text: <span class="hljs-string">"Choice 5"</span>, value: <span class="hljs-string">"5"</span> }
+        { text: <span class="hljs-string">&quot;Choice 1&quot;</span>, value: <span class="hljs-string">&quot;1&quot;</span> },
+        { text: <span class="hljs-string">&quot;Choice 2&quot;</span>, value: <span class="hljs-string">&quot;2&quot;</span> },
+        { text: <span class="hljs-string">&quot;Choice 3&quot;</span>, value: <span class="hljs-string">&quot;3&quot;</span> },
+        { text: <span class="hljs-string">&quot;Choice 4&quot;</span>, value: <span class="hljs-string">&quot;4&quot;</span> },
+        { text: <span class="hljs-string">&quot;Choice 5&quot;</span>, value: <span class="hljs-string">&quot;5&quot;</span> }
     ],
     onChange: <span class="hljs-function">(<span class="hljs-params">item, ev</span>) =&gt;</span> {
-        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"The selected value is: "</span> + item.text);
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;The selected value is: &quot;</span> + item.text);
     }
 });</code></pre>
 					</div>
@@ -222,7 +222,7 @@
 					<div class="tsd-signature tsd-kind-icon">Dropdown<wbr>Types<span class="tsd-signature-symbol">:</span> <a href="_components_dropdown_d_.html#idropdowntypes" class="tsd-signature-type">IDropdownTypes</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in components/components/dropdown.d.ts:52</li>
+							<li>Defined in components/components/dropdown.d.ts:54</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">

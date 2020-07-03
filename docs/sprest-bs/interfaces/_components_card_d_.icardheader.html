@@ -60,7 +60,7 @@
 					<a href="_components_card_d_.icardheader.html">ICardHeader</a>
 				</li>
 			</ul>
-			<h1>Interface ICardHeader</h1>
+			<h1>Interface ICardHeader&lt;T&gt;</h1>
 		</div>
 	</div>
 </header>
@@ -73,6 +73,14 @@
 						<p>Card Header</p>
 					</div>
 				</div>
+			</section>
+			<section class="tsd-panel tsd-type-parameters">
+				<h3>Type parameters</h3>
+				<ul class="tsd-type-parameters">
+					<li>
+						<h4>T</h4>
+					</li>
+				</ul>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
@@ -92,6 +100,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_components_card_d_.icardheader.html#classname" class="tsd-kind-icon">class<wbr>Name</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_components_card_d_.icardheader.html#content" class="tsd-kind-icon">content</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_components_card_d_.icardheader.html#nav" class="tsd-kind-icon">nav</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_components_card_d_.icardheader.html#onrender" class="tsd-kind-icon">on<wbr>Render</a></li>
 							</ul>
 						</section>
 					</div>
@@ -112,7 +121,7 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="content" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> content</h3>
-					<div class="tsd-signature tsd-kind-icon">content<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Element</span></div>
+					<div class="tsd-signature tsd-kind-icon">content<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T</span></div>
 					<aside class="tsd-sources">
 						<ul>
 							<li>Defined in components/components/card.d.ts:110</li>
@@ -125,9 +134,43 @@
 					<div class="tsd-signature tsd-kind-icon">nav<span class="tsd-signature-symbol">:</span> <a href="_components_nav_d_.inavprops.html" class="tsd-signature-type">INavProps</a></div>
 					<aside class="tsd-sources">
 						<ul>
+							<li>Defined in components/components/card.d.ts:112</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="onrender" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> on<wbr>Render</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Render<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>el<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">HTMLElement</span>, card<span class="tsd-signature-symbol">?: </span><a href="_components_card_d_.icardheader.html" class="tsd-signature-type">ICardHeader</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
+					<aside class="tsd-sources">
+						<ul>
 							<li>Defined in components/components/card.d.ts:111</li>
 						</ul>
 					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>el<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">HTMLElement</span>, card<span class="tsd-signature-symbol">?: </span><a href="_components_card_d_.icardheader.html" class="tsd-signature-type">ICardHeader</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> el: <span class="tsd-signature-type">HTMLElement</span></h5>
+											</li>
+											<li>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> card: <a href="_components_card_d_.icardheader.html" class="tsd-signature-type">ICardHeader</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
 				</section>
 			</section>
 		</div>
@@ -150,15 +193,15 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="_components_card_d_.icardaction.html" class="tsd-kind-icon">ICard<wbr>Action</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter">
 						<a href="_components_card_d_.icardbody.html" class="tsd-kind-icon">ICard<wbr>Body</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter">
 						<a href="_components_card_d_.icardfooter.html" class="tsd-kind-icon">ICard<wbr>Footer</a>
 					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-module">
+					<li class="current tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter">
 						<a href="_components_card_d_.icardheader.html" class="tsd-kind-icon">ICard<wbr>Header</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
@@ -170,11 +213,14 @@
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_components_card_d_.icardheader.html#nav" class="tsd-kind-icon">nav</a>
 							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_components_card_d_.icardheader.html#onrender" class="tsd-kind-icon">on<wbr>Render</a>
+							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter">
 						<a href="_components_card_d_.icardprops.html" class="tsd-kind-icon">ICard<wbr>Props</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module">

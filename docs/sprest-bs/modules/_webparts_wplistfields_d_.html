@@ -107,18 +107,18 @@
 							</a>
 						</div>
 						<p>The list fields webpart should be used when targeting a list and fields as a datasource.</p>
-						<pre><code class="language-ts"><span class="hljs-keyword">import</span> { WebParts } <span class="hljs-keyword">from</span> <span class="hljs-string">"gd-sprest-bs"</span>;
+						<pre><code class="language-ts"><span class="hljs-keyword">import</span> { WebParts } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;gd-sprest-bs&quot;</span>;
 
 <span class="hljs-comment">// Create the webpart</span>
 WebParts.WebPart({
-    elementId: <span class="hljs-string">"my-wpList"</span>,
-    cfgElementId: <span class="hljs-string">"my-wpList-cfg"</span>,
+    elementId: <span class="hljs-string">&quot;my-wpList&quot;</span>,
+    cfgElementId: <span class="hljs-string">&quot;my-wpList-cfg&quot;</span>,
     onRenderItems: <span class="hljs-function">(<span class="hljs-params">wpInfo, items</span>) =&gt;</span> {
         <span class="hljs-comment">// Render the display element</span>
         wpInfo.el.innerHTML = [
-            <span class="hljs-string">'&lt;h1&gt;List: '</span> + wpInfo.ListName + <span class="hljs-string">'&lt;/h1&gt;'</span>,
-            <span class="hljs-string">'&lt;h5&gt;List Items: '</span> + items.length + <span class="hljs-string">'&lt;/h5&gt;'</span>
-        ].join(<span class="hljs-string">'\n'</span>);
+            <span class="hljs-string">&#x27;&lt;h1&gt;List: &#x27;</span> + wpInfo.ListName + <span class="hljs-string">&#x27;&lt;/h1&gt;&#x27;</span>,
+            <span class="hljs-string">&#x27;&lt;h5&gt;List Items: &#x27;</span> + items.length + <span class="hljs-string">&#x27;&lt;/h5&gt;&#x27;</span>
+        ].join(<span class="hljs-string">&#x27;\n&#x27;</span>);
     }
 });</code></pre>
 					</div>

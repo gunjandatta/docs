@@ -137,29 +137,29 @@
 								<h3>Table</h3>
 							</a>
 						</div>
-						<pre><code class="language-ts"><span class="hljs-keyword">import</span> { Components } <span class="hljs-keyword">from</span> <span class="hljs-string">"gd-sprest-bs"</span>;
+						<pre><code class="language-ts"><span class="hljs-keyword">import</span> { Components } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;gd-sprest-bs&quot;</span>;
 
 <span class="hljs-comment">// Create the table</span>
-<span class="hljs-keyword">let</span> el = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">"#table"</span>);
+<span class="hljs-keyword">let</span> el = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#table&quot;</span>);
 <span class="hljs-keyword">let</span> table = Components.Table({
     el: el,
-    className: <span class="hljs-string">"table-sm is-striped"</span>,
+    className: <span class="hljs-string">&quot;table-sm is-striped&quot;</span>,
     columns: [
-        { name: <span class="hljs-string">"a0"</span>, title: <span class="hljs-string">"Actions"</span>, isHidden: <span class="hljs-literal">true</span> },
-        { name: <span class="hljs-string">"a1"</span>, title: <span class="hljs-string">"Col 1"</span> },
-        { name: <span class="hljs-string">"a2"</span>, title: <span class="hljs-string">"Col 2"</span> },
-        { name: <span class="hljs-string">"a3"</span>, title: <span class="hljs-string">"Col 3"</span> }
+        { name: <span class="hljs-string">&quot;a0&quot;</span>, title: <span class="hljs-string">&quot;Actions&quot;</span>, isHidden: <span class="hljs-literal">true</span> },
+        { name: <span class="hljs-string">&quot;a1&quot;</span>, title: <span class="hljs-string">&quot;Col 1&quot;</span> },
+        { name: <span class="hljs-string">&quot;a2&quot;</span>, title: <span class="hljs-string">&quot;Col 2&quot;</span> },
+        { name: <span class="hljs-string">&quot;a3&quot;</span>, title: <span class="hljs-string">&quot;Col 3&quot;</span> }
     ],
     rows: [
-        { a0: <span class="hljs-string">"1"</span>, a1: <span class="hljs-string">"1.1"</span>, a2: <span class="hljs-string">"1.2"</span>, a3: <span class="hljs-string">"1.3"</span> },
-        { a0: <span class="hljs-string">"2"</span>, a1: <span class="hljs-string">"2.1"</span>, a2: <span class="hljs-string">"2.2"</span>, a3: <span class="hljs-string">"2.3"</span> },
-        { a0: <span class="hljs-string">"3"</span>, a1: <span class="hljs-string">"3.1"</span>, a2: <span class="hljs-string">"3.2"</span>, a3: <span class="hljs-string">"3.3"</span> },
-        { a0: <span class="hljs-string">"4"</span>, a1: <span class="hljs-string">"4.1"</span>, a2: <span class="hljs-string">"4.2"</span>, a3: <span class="hljs-string">"4.3"</span> },
-        { a0: <span class="hljs-string">"5"</span>, a1: <span class="hljs-string">"5.1"</span>, a2: <span class="hljs-string">"5.2"</span>, a3: <span class="hljs-string">"5.3"</span> },
-        { a0: <span class="hljs-string">"6"</span>, a1: <span class="hljs-string">"6.1"</span>, a2: <span class="hljs-string">"6.2"</span>, a3: <span class="hljs-string">"6.3"</span> },
-        { a0: <span class="hljs-string">"7"</span>, a1: <span class="hljs-string">"7.1"</span>, a2: <span class="hljs-string">"7.2"</span>, a3: <span class="hljs-string">"7.3"</span> },
-        { a0: <span class="hljs-string">"8"</span>, a1: <span class="hljs-string">"8.1"</span>, a2: <span class="hljs-string">"8.2"</span>, a3: <span class="hljs-string">"8.3"</span> },
-        { a0: <span class="hljs-string">"9"</span>, a1: <span class="hljs-string">"9.1"</span>, a2: <span class="hljs-string">"9.2"</span>, a3: <span class="hljs-string">"9.3"</span> }
+        { a0: <span class="hljs-string">&quot;1&quot;</span>, a1: <span class="hljs-string">&quot;1.1&quot;</span>, a2: <span class="hljs-string">&quot;1.2&quot;</span>, a3: <span class="hljs-string">&quot;1.3&quot;</span> },
+        { a0: <span class="hljs-string">&quot;2&quot;</span>, a1: <span class="hljs-string">&quot;2.1&quot;</span>, a2: <span class="hljs-string">&quot;2.2&quot;</span>, a3: <span class="hljs-string">&quot;2.3&quot;</span> },
+        { a0: <span class="hljs-string">&quot;3&quot;</span>, a1: <span class="hljs-string">&quot;3.1&quot;</span>, a2: <span class="hljs-string">&quot;3.2&quot;</span>, a3: <span class="hljs-string">&quot;3.3&quot;</span> },
+        { a0: <span class="hljs-string">&quot;4&quot;</span>, a1: <span class="hljs-string">&quot;4.1&quot;</span>, a2: <span class="hljs-string">&quot;4.2&quot;</span>, a3: <span class="hljs-string">&quot;4.3&quot;</span> },
+        { a0: <span class="hljs-string">&quot;5&quot;</span>, a1: <span class="hljs-string">&quot;5.1&quot;</span>, a2: <span class="hljs-string">&quot;5.2&quot;</span>, a3: <span class="hljs-string">&quot;5.3&quot;</span> },
+        { a0: <span class="hljs-string">&quot;6&quot;</span>, a1: <span class="hljs-string">&quot;6.1&quot;</span>, a2: <span class="hljs-string">&quot;6.2&quot;</span>, a3: <span class="hljs-string">&quot;6.3&quot;</span> },
+        { a0: <span class="hljs-string">&quot;7&quot;</span>, a1: <span class="hljs-string">&quot;7.1&quot;</span>, a2: <span class="hljs-string">&quot;7.2&quot;</span>, a3: <span class="hljs-string">&quot;7.3&quot;</span> },
+        { a0: <span class="hljs-string">&quot;8&quot;</span>, a1: <span class="hljs-string">&quot;8.1&quot;</span>, a2: <span class="hljs-string">&quot;8.2&quot;</span>, a3: <span class="hljs-string">&quot;8.3&quot;</span> },
+        { a0: <span class="hljs-string">&quot;9&quot;</span>, a1: <span class="hljs-string">&quot;9.1&quot;</span>, a2: <span class="hljs-string">&quot;9.2&quot;</span>, a3: <span class="hljs-string">&quot;9.3&quot;</span> }
     ]
 });</code></pre>
 					</div>

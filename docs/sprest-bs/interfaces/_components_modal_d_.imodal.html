@@ -98,6 +98,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_components_modal_d_.imodal.html#el" class="tsd-kind-icon">el</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_components_modal_d_.imodal.html#handleupdate" class="tsd-kind-icon">handle<wbr>Update</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_components_modal_d_.imodal.html#hide" class="tsd-kind-icon">hide</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_components_modal_d_.imodal.html#isvisible" class="tsd-kind-icon">is<wbr>Visible</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_components_modal_d_.imodal.html#settitle" class="tsd-kind-icon">set<wbr>Title</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_components_modal_d_.imodal.html#show" class="tsd-kind-icon">show</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_components_modal_d_.imodal.html#toggle" class="tsd-kind-icon">toggle</a></li>
@@ -114,12 +115,12 @@
 					<div class="tsd-signature tsd-kind-icon">dispose<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in components/components/modal.d.ts:58</li>
+							<li>Defined in components/components/modal.d.ts:64</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Destroys an element’s modal.</p>
+							<p>Disposes the modal.</p>
 						</div>
 					</div>
 					<div class="tsd-type-declaration">
@@ -144,7 +145,7 @@
 					<div class="tsd-signature tsd-kind-icon">el<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Element</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in components/components/modal.d.ts:61</li>
+							<li>Defined in components/components/modal.d.ts:67</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -159,7 +160,7 @@
 					<div class="tsd-signature tsd-kind-icon">handle<wbr>Update<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in components/components/modal.d.ts:64</li>
+							<li>Defined in components/components/modal.d.ts:70</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -189,7 +190,7 @@
 					<div class="tsd-signature tsd-kind-icon">hide<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in components/components/modal.d.ts:67</li>
+							<li>Defined in components/components/modal.d.ts:73</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -214,12 +215,27 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="isvisible" class="tsd-anchor"></a>
+					<h3>is<wbr>Visible</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Visible<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in components/components/modal.d.ts:76</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Returns true if the modal is visible.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="settitle" class="tsd-anchor"></a>
 					<h3>set<wbr>Title</h3>
 					<div class="tsd-signature tsd-kind-icon">set<wbr>Title<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>title<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in components/components/modal.d.ts:70</li>
+							<li>Defined in components/components/modal.d.ts:79</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -255,7 +271,7 @@
 					<div class="tsd-signature tsd-kind-icon">show<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in components/components/modal.d.ts:73</li>
+							<li>Defined in components/components/modal.d.ts:82</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -285,7 +301,7 @@
 					<div class="tsd-signature tsd-kind-icon">toggle<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in components/components/modal.d.ts:76</li>
+							<li>Defined in components/components/modal.d.ts:85</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -342,6 +358,9 @@
 								<a href="_components_modal_d_.imodal.html#hide" class="tsd-kind-icon">hide</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_components_modal_d_.imodal.html#isvisible" class="tsd-kind-icon">is<wbr>Visible</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_components_modal_d_.imodal.html#settitle" class="tsd-kind-icon">set<wbr>Title</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
@@ -357,11 +376,17 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="_components_modal_d_.imodaloptions.html" class="tsd-kind-icon">IModal<wbr>Options</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter">
 						<a href="_components_modal_d_.imodalprops.html" class="tsd-kind-icon">IModal<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="../modules/_components_modal_d_.html#imodaltypes" class="tsd-kind-icon">IModal<wbr>Types</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module">
 						<a href="../modules/_components_modal_d_.html#modal" class="tsd-kind-icon">Modal</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="../modules/_components_modal_d_.html#modaltypes" class="tsd-kind-icon">Modal<wbr>Types</a>
 					</li>
 				</ul>
 			</nav>

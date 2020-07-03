@@ -159,46 +159,46 @@
 								<h3>Form</h3>
 							</a>
 						</div>
-						<pre><code class="language-ts"><span class="hljs-keyword">import</span> { Components } <span class="hljs-keyword">from</span> <span class="hljs-string">"gd-sprest-bs"</span>;
+						<pre><code class="language-ts"><span class="hljs-keyword">import</span> { Components } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;gd-sprest-bs&quot;</span>;
 
 <span class="hljs-comment">// Create the form</span>
-<span class="hljs-keyword">let</span> el = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">"#myForm"</span>);
+<span class="hljs-keyword">let</span> el = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#myForm&quot;</span>);
 <span class="hljs-keyword">let</span> form = Components.Form({
     el: el,
     rows: [
         {
             control: {
-                label: <span class="hljs-string">"First Name:"</span>,
-                name: <span class="hljs-string">"FName"</span>,
+                label: <span class="hljs-string">&quot;First Name:&quot;</span>,
+                name: <span class="hljs-string">&quot;FName&quot;</span>,
                 <span class="hljs-keyword">type</span>: Components.FormControlTypes.TextField
             }
         },
         {
             control: {
-                label: <span class="hljs-string">"Last Name:"</span>,
-                name: <span class="hljs-string">"LName"</span>,
+                label: <span class="hljs-string">&quot;Last Name:&quot;</span>,
+                name: <span class="hljs-string">&quot;LName&quot;</span>,
                 <span class="hljs-keyword">type</span>: Components.FormControlTypes.TextField
             }
         },
         {
             control: {
-                label: <span class="hljs-string">"Choices:"</span>,
-                name: <span class="hljs-string">"Choice"</span>,
+                label: <span class="hljs-string">&quot;Choices:&quot;</span>,
+                name: <span class="hljs-string">&quot;Choice&quot;</span>,
                 <span class="hljs-keyword">type</span>: Components.FormControlTypes.Dropdown,
                 items: [
-                    { text: <span class="hljs-string">"Choice 1"</span>, value: <span class="hljs-string">"1"</span> },
-                    { text: <span class="hljs-string">"Choice 2"</span>, value: <span class="hljs-string">"2"</span> },
-                    { text: <span class="hljs-string">"Choice 3"</span>, value: <span class="hljs-string">"3"</span> },
-                    { text: <span class="hljs-string">"Choice 4"</span>, value: <span class="hljs-string">"4"</span> },
-                    { text: <span class="hljs-string">"Choice 5"</span>, value: <span class="hljs-string">"5"</span> }
+                    { text: <span class="hljs-string">&quot;Choice 1&quot;</span>, value: <span class="hljs-string">&quot;1&quot;</span> },
+                    { text: <span class="hljs-string">&quot;Choice 2&quot;</span>, value: <span class="hljs-string">&quot;2&quot;</span> },
+                    { text: <span class="hljs-string">&quot;Choice 3&quot;</span>, value: <span class="hljs-string">&quot;3&quot;</span> },
+                    { text: <span class="hljs-string">&quot;Choice 4&quot;</span>, value: <span class="hljs-string">&quot;4&quot;</span> },
+                    { text: <span class="hljs-string">&quot;Choice 5&quot;</span>, value: <span class="hljs-string">&quot;5&quot;</span> }
                 ]
             }
         }
     ],
     value: {
-        FName: <span class="hljs-string">"Gunjan"</span>,
-        LName: <span class="hljs-string">"Datta"</span>,
-        Choice: <span class="hljs-string">"3"</span>
+        FName: <span class="hljs-string">&quot;Gunjan&quot;</span>,
+        LName: <span class="hljs-string">&quot;Datta&quot;</span>,
+        Choice: <span class="hljs-string">&quot;3&quot;</span>
     }
 });</code></pre>
 					</div>

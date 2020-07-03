@@ -109,10 +109,10 @@
 								<h3>People Picker</h3>
 							</a>
 						</div>
-						<pre><code class="language-ts"><span class="hljs-keyword">import</span> { ContextInfo, Components } <span class="hljs-keyword">from</span> <span class="hljs-string">"../../@types-bs"</span>;
+						<pre><code class="language-ts"><span class="hljs-keyword">import</span> { ContextInfo, Components } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;../../@types-bs&quot;</span>;
 
 <span class="hljs-comment">// Create the panel</span>
-<span class="hljs-keyword">let</span> el = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">"#people-picker"</span>);
+<span class="hljs-keyword">let</span> el = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#people-picker&quot;</span>);
 <span class="hljs-keyword">let</span> form = Components.Form({
     el: el,
     rows: [
@@ -120,9 +120,9 @@
         {
             control: {
                 allowGroups: <span class="hljs-literal">false</span>,
-                label: <span class="hljs-string">"Select User:"</span>,
+                label: <span class="hljs-string">&quot;Select User:&quot;</span>,
                 multi: <span class="hljs-literal">true</span>,
-                name: <span class="hljs-string">"User"</span>,
+                name: <span class="hljs-string">&quot;User&quot;</span>,
                 <span class="hljs-keyword">type</span>: Components.FormControlTypes.PeoplePicker
                 value: ContextInfo.userId <span class="hljs-comment">// Default to the current user</span>
             } <span class="hljs-keyword">as</span> Components.IFormControlPropsPeoplePicker

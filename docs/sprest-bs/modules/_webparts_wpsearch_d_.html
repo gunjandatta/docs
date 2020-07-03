@@ -106,18 +106,18 @@
 							</a>
 						</div>
 						<p>The search webpart extends the list webpart, and includes a filterItems method to return items based on the inputed filter text.</p>
-						<pre><code class="language-ts"><span class="hljs-keyword">import</span> { WebParts } <span class="hljs-keyword">from</span> <span class="hljs-string">"gd-sprest-bs"</span>;
+						<pre><code class="language-ts"><span class="hljs-keyword">import</span> { WebParts } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;gd-sprest-bs&quot;</span>;
 
 <span class="hljs-comment">// Create the webpart</span>
 <span class="hljs-keyword">let</span> wp = WebParts.WebPart({
-    elementId: <span class="hljs-string">"my-wpSearch"</span>,
-    cfgElementId: <span class="hljs-string">"my-wpSearch-cfg"</span>,
+    elementId: <span class="hljs-string">&quot;my-wpSearch&quot;</span>,
+    cfgElementId: <span class="hljs-string">&quot;my-wpSearch-cfg&quot;</span>,
     onRenderItems: <span class="hljs-function">(<span class="hljs-params">wpInfo, items</span>) =&gt;</span> {
         <span class="hljs-comment">// Render the display element</span>
         wpInfo.el.innerHTML = [
-            <span class="hljs-string">'&lt;h1&gt;List: '</span> + wpInfo.ListName + <span class="hljs-string">'&lt;/h1&gt;'</span>,
-            <span class="hljs-string">'&lt;h5&gt;List Items: '</span> + items.length + <span class="hljs-string">'&lt;/h5&gt;'</span>
-        ].join(<span class="hljs-string">'\n'</span>);
+            <span class="hljs-string">&#x27;&lt;h1&gt;List: &#x27;</span> + wpInfo.ListName + <span class="hljs-string">&#x27;&lt;/h1&gt;&#x27;</span>,
+            <span class="hljs-string">&#x27;&lt;h5&gt;List Items: &#x27;</span> + items.length + <span class="hljs-string">&#x27;&lt;/h5&gt;&#x27;</span>
+        ].join(<span class="hljs-string">&#x27;\n&#x27;</span>);
     }
 });</code></pre>
 					</div>
