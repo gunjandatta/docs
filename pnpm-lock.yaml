@@ -1,7 +1,7 @@
 dependencies:
-  gd-bs: 3.0.5
+  gd-bs: 3.0.6
   gd-sprest: 5.8.4
-  gd-sprest-bs: 5.0.3
+  gd-sprest-bs: 5.0.4
   gd-sprest-def: 0.7.8
 devDependencies:
   typedoc: 0.17.8
@@ -53,22 +53,22 @@ packages:
     dev: true
     resolution:
       integrity: sha1-FQStJSMVjKpA20onh8sBQRmU6k8=
-  /gd-bs/3.0.5:
+  /gd-bs/3.0.6:
     dependencies:
       bootstrap: 5.0.0-alpha1_popper.js@1.16.1
       popper.js: 1.16.1
     dev: false
     resolution:
-      integrity: sha512-DXHVum4bF9boCCOWrp7C5lxBARnOD6OvgLc2OOnCs3f1QfrXhHsYTikNnAqkpxxqvtF4LkBovp7MZ7O23k24Yg==
-  /gd-sprest-bs/5.0.3:
+      integrity: sha512-r1S95fD7D9uV2daPgqISfiRNUcnzsWrKJGvqJFhsE2zCPPqIPVeGnxfw8i93GJv9BCyLsY/ezds1X1onZ52lqA==
+  /gd-sprest-bs/5.0.4:
     dependencies:
       flatpickr: 4.6.3
-      gd-bs: 3.0.5
+      gd-bs: 3.0.6
       gd-sprest: 5.8.4
       gd-sprest-def: 0.7.8
     dev: false
     resolution:
-      integrity: sha512-buS6McU7nuPVHPLjCAX562geI2Ya8sYjpDLNpfdYixI4ebkHBv2rBgU6WUC5Omy7AT/PzqkekTdKTCgwvJ6szA==
+      integrity: sha512-4oVPBzbzhnWEVJE80fTaPkdHYW9rLO8iYre7tuMRmZaBe1XrT5G1OhB/TSZg89I5vDTyXTI/t/ifbKvUzsDZbg==
   /gd-sprest-def/0.7.8:
     dev: false
     resolution:
@@ -274,8 +274,8 @@ packages:
     resolution:
       integrity: sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=
 specifiers:
-  gd-bs: ^3.0.5
+  gd-bs: ^3.0.6
   gd-sprest: ^5.8.4
-  gd-sprest-bs: ^5.0.3
+  gd-sprest-bs: ^5.0.4
   gd-sprest-def: ^0.7.8
   typedoc: ^0.17.8
