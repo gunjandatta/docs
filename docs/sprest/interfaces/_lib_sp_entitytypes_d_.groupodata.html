@@ -78,6 +78,9 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
+						<a href="_lib_sp_entitytypes_d_.principal.html" class="tsd-signature-type">Principal</a>
+					</li>
+					<li>
 						<span class="tsd-signature-type">IBaseResult</span>
 					</li>
 					<li>
@@ -114,9 +117,11 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_lib_sp_entitytypes_d_.groupodata.html#description" class="tsd-kind-icon">Description</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_lib_sp_entitytypes_d_.groupodata.html#id" class="tsd-kind-icon">Id</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_lib_sp_entitytypes_d_.groupodata.html#ishiddeninui" class="tsd-kind-icon">Is<wbr>Hidden<wbr>InUI</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_lib_sp_entitytypes_d_.groupodata.html#loginname" class="tsd-kind-icon">Login<wbr>Name</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_lib_sp_entitytypes_d_.groupodata.html#onlyallowmembersviewmembership" class="tsd-kind-icon">Only<wbr>Allow<wbr>Members<wbr>View<wbr>Membership</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_lib_sp_entitytypes_d_.groupodata.html#owner" class="tsd-kind-icon">Owner</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_lib_sp_entitytypes_d_.groupodata.html#ownertitle" class="tsd-kind-icon">Owner<wbr>Title</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_lib_sp_entitytypes_d_.groupodata.html#principaltype" class="tsd-kind-icon">Principal<wbr>Type</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_lib_sp_entitytypes_d_.groupodata.html#requesttojoinleaveemailsetting" class="tsd-kind-icon">Request<wbr>ToJoin<wbr>Leave<wbr>Email<wbr>Setting</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_lib_sp_entitytypes_d_.groupodata.html#title" class="tsd-kind-icon">Title</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_lib_sp_entitytypes_d_.groupodata.html#users" class="tsd-kind-icon">Users</a></li>
@@ -219,9 +224,9 @@
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> Id</h3>
 					<div class="tsd-signature tsd-kind-icon">Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_lib_sp_entitytypes_d_.igroupquery.html">IGroupQuery</a>.<a href="_lib_sp_entitytypes_d_.igroupquery.html#id">Id</a></p>
+						<p>Inherited from <a href="_lib_sp_entitytypes_d_.principal.html">Principal</a>.<a href="_lib_sp_entitytypes_d_.principal.html#id">Id</a></p>
 						<ul>
-							<li>Defined in lib/SP/entitytypes.d.ts:609</li>
+							<li>Defined in lib/SP/entitytypes.d.ts:549</li>
 						</ul>
 					</aside>
 				</section>
@@ -230,9 +235,20 @@
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> Is<wbr>Hidden<wbr>InUI</h3>
 					<div class="tsd-signature tsd-kind-icon">Is<wbr>Hidden<wbr>InUI<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_lib_sp_entitytypes_d_.igroupquery.html">IGroupQuery</a>.<a href="_lib_sp_entitytypes_d_.igroupquery.html#ishiddeninui">IsHiddenInUI</a></p>
+						<p>Inherited from <a href="_lib_sp_entitytypes_d_.principal.html">Principal</a>.<a href="_lib_sp_entitytypes_d_.principal.html#ishiddeninui">IsHiddenInUI</a></p>
 						<ul>
-							<li>Defined in lib/SP/entitytypes.d.ts:610</li>
+							<li>Defined in lib/SP/entitytypes.d.ts:550</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="loginname" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> Login<wbr>Name</h3>
+					<div class="tsd-signature tsd-kind-icon">Login<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_lib_sp_entitytypes_d_.principal.html">Principal</a>.<a href="_lib_sp_entitytypes_d_.principal.html#loginname">LoginName</a></p>
+						<ul>
+							<li>Defined in lib/SP/entitytypes.d.ts:551</li>
 						</ul>
 					</aside>
 				</section>
@@ -243,7 +259,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_lib_sp_entitytypes_d_.igroupquery.html">IGroupQuery</a>.<a href="_lib_sp_entitytypes_d_.igroupquery.html#onlyallowmembersviewmembership">OnlyAllowMembersViewMembership</a></p>
 						<ul>
-							<li>Defined in lib/SP/entitytypes.d.ts:611</li>
+							<li>Defined in lib/SP/entitytypes.d.ts:609</li>
 						</ul>
 					</aside>
 				</section>
@@ -253,7 +269,7 @@
 					<div class="tsd-signature tsd-kind-icon">Owner<span class="tsd-signature-symbol">:</span> <a href="_lib_sp_entitytypes_d_.principal.html" class="tsd-signature-type">Principal</a><span class="tsd-signature-symbol"> &amp; </span><a href="_lib_sp_entitytypes_d_.principalcollections.html" class="tsd-signature-type">PrincipalCollections</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in lib/SP/entitytypes.d.ts:647</li>
+							<li>Defined in lib/SP/entitytypes.d.ts:644</li>
 						</ul>
 					</aside>
 				</section>
@@ -264,7 +280,18 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_lib_sp_entitytypes_d_.igroupquery.html">IGroupQuery</a>.<a href="_lib_sp_entitytypes_d_.igroupquery.html#ownertitle">OwnerTitle</a></p>
 						<ul>
-							<li>Defined in lib/SP/entitytypes.d.ts:612</li>
+							<li>Defined in lib/SP/entitytypes.d.ts:610</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="principaltype" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> Principal<wbr>Type</h3>
+					<div class="tsd-signature tsd-kind-icon">Principal<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_lib_sp_entitytypes_d_.principal.html">Principal</a>.<a href="_lib_sp_entitytypes_d_.principal.html#principaltype">PrincipalType</a></p>
+						<ul>
+							<li>Defined in lib/SP/entitytypes.d.ts:553</li>
 						</ul>
 					</aside>
 				</section>
@@ -275,7 +302,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_lib_sp_entitytypes_d_.igroupquery.html">IGroupQuery</a>.<a href="_lib_sp_entitytypes_d_.igroupquery.html#requesttojoinleaveemailsetting">RequestToJoinLeaveEmailSetting</a></p>
 						<ul>
-							<li>Defined in lib/SP/entitytypes.d.ts:613</li>
+							<li>Defined in lib/SP/entitytypes.d.ts:611</li>
 						</ul>
 					</aside>
 				</section>
@@ -284,9 +311,9 @@
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> Title</h3>
 					<div class="tsd-signature tsd-kind-icon">Title<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_lib_sp_entitytypes_d_.igroupquery.html">IGroupQuery</a>.<a href="_lib_sp_entitytypes_d_.igroupquery.html#title">Title</a></p>
+						<p>Inherited from <a href="_lib_sp_entitytypes_d_.principal.html">Principal</a>.<a href="_lib_sp_entitytypes_d_.principal.html#title">Title</a></p>
 						<ul>
-							<li>Defined in lib/SP/entitytypes.d.ts:614</li>
+							<li>Defined in lib/SP/entitytypes.d.ts:552</li>
 						</ul>
 					</aside>
 				</section>
@@ -296,7 +323,7 @@
 					<div class="tsd-signature tsd-kind-icon">Users<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">IBaseResults</span><span class="tsd-signature-symbol">&lt;</span><a href="_lib_sp_entitytypes_d_.user.html" class="tsd-signature-type">User</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><a href="_lib_sp_entitytypes_d_.usercollectionmethods.html" class="tsd-signature-type">UserCollectionMethods</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in lib/SP/entitytypes.d.ts:648</li>
+							<li>Defined in lib/SP/entitytypes.d.ts:645</li>
 						</ul>
 					</aside>
 				</section>
@@ -346,7 +373,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_lib_sp_entitytypes_d_.igroup.html">IGroup</a>.<a href="_lib_sp_entitytypes_d_.igroup.html#setuserasowner">setUserAsOwner</a></p>
 								<ul>
-									<li>Defined in lib/SP/entitytypes.d.ts:655</li>
+									<li>Defined in lib/SP/entitytypes.d.ts:652</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -393,7 +420,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_lib_sp_entitytypes_d_.igroup.html">IGroup</a>.<a href="_lib_sp_entitytypes_d_.igroup.html#update">update</a></p>
 								<ul>
-									<li>Defined in lib/SP/entitytypes.d.ts:656</li>
+									<li>Defined in lib/SP/entitytypes.d.ts:653</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IBaseExecution</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -448,6 +475,9 @@
 								<a href="_lib_sp_entitytypes_d_.groupodata.html#ishiddeninui" class="tsd-kind-icon">Is<wbr>Hidden<wbr>InUI</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="_lib_sp_entitytypes_d_.groupodata.html#loginname" class="tsd-kind-icon">Login<wbr>Name</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="_lib_sp_entitytypes_d_.groupodata.html#onlyallowmembersviewmembership" class="tsd-kind-icon">Only<wbr>Allow<wbr>Members<wbr>View<wbr>Membership</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
@@ -455,6 +485,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="_lib_sp_entitytypes_d_.groupodata.html#ownertitle" class="tsd-kind-icon">Owner<wbr>Title</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="_lib_sp_entitytypes_d_.groupodata.html#principaltype" class="tsd-kind-icon">Principal<wbr>Type</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="_lib_sp_entitytypes_d_.groupodata.html#requesttojoinleaveemailsetting" class="tsd-kind-icon">Request<wbr>ToJoin<wbr>Leave<wbr>Email<wbr>Setting</a>

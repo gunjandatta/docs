@@ -1,8 +1,8 @@
 dependencies:
-  gd-bs: 3.0.6
-  gd-sprest: 5.8.4
-  gd-sprest-bs: 5.0.4
-  gd-sprest-def: 0.7.8
+  gd-bs: 3.1.3
+  gd-sprest: 5.9.3
+  gd-sprest-bs: 5.3.2
+  gd-sprest-def: 0.8.1
 devDependencies:
   typedoc: 0.17.8
 lockfileVersion: 5.1
@@ -53,33 +53,37 @@ packages:
     dev: true
     resolution:
       integrity: sha1-FQStJSMVjKpA20onh8sBQRmU6k8=
-  /gd-bs/3.0.6:
+  /gd-bs/3.1.3:
     dependencies:
       bootstrap: 5.0.0-alpha1_popper.js@1.16.1
       popper.js: 1.16.1
     dev: false
     resolution:
-      integrity: sha512-r1S95fD7D9uV2daPgqISfiRNUcnzsWrKJGvqJFhsE2zCPPqIPVeGnxfw8i93GJv9BCyLsY/ezds1X1onZ52lqA==
-  /gd-sprest-bs/5.0.4:
+      integrity: sha512-QoQmmtSFNdmr7uWlnf6vaneJLenkZA2K+Co5csVsTzFmZy1W8p1EJyA/xMw4GnG5zEx/fdk/PxvWbFYSYK2Nfg==
+  /gd-sprest-bs/5.3.2:
     dependencies:
       flatpickr: 4.6.3
-      gd-bs: 3.0.6
-      gd-sprest: 5.8.4
-      gd-sprest-def: 0.7.8
+      gd-bs: 3.1.3
+      gd-sprest: 5.9.3
+      gd-sprest-def: 0.7.9
     dev: false
     resolution:
-      integrity: sha512-4oVPBzbzhnWEVJE80fTaPkdHYW9rLO8iYre7tuMRmZaBe1XrT5G1OhB/TSZg89I5vDTyXTI/t/ifbKvUzsDZbg==
-  /gd-sprest-def/0.7.8:
+      integrity: sha512-HAha0MHqfufD7Q05fUySknETwGGyoRnFPcaVYfioahaA1Zabplv4hYNLMCbA5IS3ZnR0YAL7uEVnS8u+28dE8w==
+  /gd-sprest-def/0.7.9:
     dev: false
     resolution:
-      integrity: sha512-p6VkuY5dP2IJMHeFRR1sp0gdHIDPOOuipxRwo8BrNQlDzGDM++lFCQxulgmPUONt66zdoh7ZxigxzNZcn8QQ8A==
-  /gd-sprest/5.8.4:
+      integrity: sha512-Dma2zwRMBsTs0uxhYHMaZ2lk50o2PbKlCBCHgTGrknkiPT4UfOBY1gr4hXg7mNLMYkj/7J9X2+eB3BGpeK3X2A==
+  /gd-sprest-def/0.8.1:
+    dev: false
+    resolution:
+      integrity: sha512-uYrSl4L3VV55mMEuHYBJDuchxeQPFpultTEsb3wOfsBoaGGAK/8i0Fzay7gLfzJkLKrs3N+AP3v5LeYwAW5Qgg==
+  /gd-sprest/5.9.3:
     dependencies:
       core-js: 3.6.5
-      gd-sprest-def: 0.7.8
+      gd-sprest-def: 0.7.9
     dev: false
     resolution:
-      integrity: sha512-AvxktndY8+gDY2PFzrihQtI4LBBA41AeHW8Qlmlr5KorMvNNtdLCuWIlFwjeLlIVFC/p1S2HjPAUuSbfZ05+6A==
+      integrity: sha512-Zka3DSLL71ibNEDhim8O2YVqC+bdUgBw1BDnXIzN/FC96NdrJc5CYoQ/eSS0up3Do1S76ItT+atqEmoAa+lkbA==
   /glob/7.1.6:
     dependencies:
       fs.realpath: 1.0.0
@@ -98,7 +102,7 @@ packages:
   /handlebars/4.7.6:
     dependencies:
       minimist: 1.2.5
-      neo-async: 2.6.1
+      neo-async: 2.6.2
       source-map: 0.6.1
       wordwrap: 1.0.0
     dev: true
@@ -136,10 +140,10 @@ packages:
       graceful-fs: 4.2.4
     resolution:
       integrity: sha1-h3Gq4HmbZAdrdmQPygWPnBDjPss=
-  /lodash/4.17.15:
+  /lodash/4.17.19:
     dev: true
     resolution:
-      integrity: sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
+      integrity: sha512-JNvd8XER9GQX0v2qJgsaN/mzFCNA5BRe/j8JN9d+tWyGLSodKQHKFicdwNYzWwI3wjRnaKPsGj1XkBjx/F96DQ==
   /lunr/2.3.8:
     dev: true
     resolution:
@@ -161,10 +165,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==
-  /neo-async/2.6.1:
+  /neo-async/2.6.2:
     dev: true
     resolution:
-      integrity: sha512-iyam8fBuCUpWeKPGpaNMetEocMt364qkCsfL9JuhjXX6dRnguRVOfk2GZaDpPjcOKiiXCPINZC1GczQ7iTq3Zw==
+      integrity: sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==
   /once/1.4.0:
     dependencies:
       wrappy: 1.0.2
@@ -236,7 +240,7 @@ packages:
       fs-extra: 8.1.0
       handlebars: 4.7.6
       highlight.js: 10.1.1
-      lodash: 4.17.15
+      lodash: 4.17.19
       lunr: 2.3.8
       marked: 1.0.0
       minimatch: 3.0.4
@@ -274,8 +278,8 @@ packages:
     resolution:
       integrity: sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=
 specifiers:
-  gd-bs: ^3.0.6
-  gd-sprest: ^5.8.4
-  gd-sprest-bs: ^5.0.4
-  gd-sprest-def: ^0.7.8
+  gd-bs: ^3.1.3
+  gd-sprest: ^5.9.3
+  gd-sprest-bs: ^5.3.2
+  gd-sprest-def: ^0.8.1
   typedoc: ^0.17.8
